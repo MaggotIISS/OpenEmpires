@@ -1,0 +1,76 @@
+/*
+    Created on : 04-Jun-2016, 16:11:40
+    Author     : Mark Ferguson
+*/
+
+.root {
+  -fx-background-color: BLACK;
+  -fx-text-fill: white;
+}
+
+.button {
+  -fx-background-color: black;
+  -fx-text-fill: white;
+  -fx-border-color: red;
+}
+
+.button:hover {
+  -fx-background-color: lightgray;
+  -fx-text-fill: white;
+}
+
+.combo-box {
+  -fx-background-color: gray;
+  -fx-text-fill: white;
+}
+
+.combo-box.arrow-button {
+  -fx-background-color: blue;
+  -fx-text-fill: white;
+}
+
+.list-view {
+  -fx-background-color: black;
+  -fx-text-fill: white;
+}
+
+.combo-box-base>*.arrow-button { /* FX theme stylesheet */
+  -fx-background-color: white;
+  -fx-background-radius: 0px 3px 3px 0px ;
+  -fx-padding: 0.5em 0.667em 0.5em 0.833333em;
+}
+.label {
+  -fx-background-color: black;
+  -fx-text-fill: white;
+}
+
+.text-field {
+  -fx-background-color: black;
+  -fx-text-fill: white;
+}
+
+.text-area {
+  -fx-background-color: black;
+  -fx-text-fill: cyan;
+}
+
+.hyper-link {
+  -fx-background-color: black;
+  -fx-text-fill: lightgreen;
+}
+
+.context-menu {
+  -fx-background-color: black;
+  -fx-text-fill: white;
+
+}
+
+.titled-pane {
+  -fx-border-color: lightcyan;
+  -fx-text-fill: red;
+}
+
+.body {
+  -fx-border-color: black;
+  -fx-text-fill: red;
+}

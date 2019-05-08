@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="521.0" prefWidth="377.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.brains.BrainsController">
+  <children>
+    <ComboBox fx:id="BRAINS" onAction="#brainChange" prefHeight="27.0" prefWidth="157.0" />
+    <Label layoutX="170.0" layoutY="1.0" onMouseClicked="#intClick" text="C4(Int)">
+      <font>
+        <Font size="10.0" />
+      </font>
+    </Label>
+    <Label layoutX="220.0" layoutY="1.0" onMouseClicked="#costClick" text="KCr">
+      <font>
+        <Font size="9.0" />
+      </font>
+    </Label>
+    <Label layoutX="271.0" layoutY="1.0" onMouseClicked="#unitClick" text="Units">
+      <font>
+        <Font size="10.0" />
+      </font>
+    </Label>
+    <Label fx:id="c4" layoutX="170.0" layoutY="14.0" text="Label">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Label>
+    <Label fx:id="kcr" layoutX="220.0" layoutY="14.0" text="Label">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Label>
+    <Label fx:id="units" layoutX="271.0" layoutY="14.0" text="Label">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Label>
+    <CheckBox fx:id="cb4wafer" layoutY="55.0" mnemonicParsing="false" onMouseClicked="#calcAddOns" text="Wafer Jack" />
+    <CheckBox fx:id="cb4emotions" layoutX="86.0" layoutY="55.0" mnemonicParsing="false" onMouseClicked="#calcAddOns" text="Emotions" />
+    <Label fx:id="l4int" layoutX="172.0" layoutY="30.0" text="0">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Label>
+    <Label fx:id="l4cost" layoutX="222.0" layoutY="30.0" text="0">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Label>
+    <Label fx:id="l4unit" layoutX="271.0" layoutY="30.0" text="0" visible="false">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Label>
+    <TextField fx:id="gened" focusTraversable="false" layoutX="305.0" layoutY="19.0" onAction="#calcC4" prefHeight="25.0" prefWidth="23.0" text="6">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </TextField>
+    <Label fx:id="l1" layoutX="4.0" layoutY="75.0" text="AGES">
+      <font>
+        <Font size="10.0" />
+      </font>
+    </Label>
+    <Label fx:id="l2" layoutX="40.0" layoutY="75.0" text="SLEEPS">
+      <font>
+        <Font size="10.0" />
+      </font>
+    </Label>
+    <Label fx:id="l3" layoutX="82.0" layoutY="75.0" text="POWER">
+      <font>
+        <Font size="10.0" />
+      </font>
+    </Label>
+    <Label fx:id="l4" layoutX="180.0" layoutY="75.0" text="WAFER">
+      <font>
+        <Font size="10.0" />
+      </font>
+    </Label>
+    <Label fx:id="l5" layoutX="220.0" layoutY="75.0" text="AIR">
+      <font>
+        <Font size="10.0" />
+      </font>
+    </Label>
+    <Label fx:id="l6" layoutX="244.0" layoutY="75.0" text="TEMP">
+      <font>
+        <Font size="10.0" />
+      </font>
+    </Label>
+    <Label fx:id="l7" layoutX="289.0" layoutY="75.0" text="PERSONALITY">
+      <font>
+        <Font size="10.0" />
+      </font>
+    </Label>
+    <Label fx:id="l4ages" layoutX="5.0" layoutY="89.0">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Label>
+    <Label fx:id="l4sleeps" layoutX="41.0" layoutY="89.0">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Label>
+    <Label fx:id="l4power" layoutX="83.0" layoutY="89.0">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Label>
+    <Label fx:id="l4wafer" layoutX="181.0" layoutY="89.0">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Label>
+    <Label fx:id="l4air" layoutX="220.0" layoutY="89.0">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Label>
+    <Label fx:id="l4temp" layoutX="245.0" layoutY="89.0">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Label>
+    <Label fx:id="l4pers" layoutX="290.0" layoutY="89.0">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Label>
+    <ComboBox fx:id="PARAMS" layoutY="26.0" onAction="#cb4ParamsAction" prefHeight="25.0" prefWidth="157.0" />
+    <Label layoutX="340.0" layoutY="1.0" onMouseClicked="#randomC4" text="1D">
+      <font>
+        <Font size="10.0" />
+      </font>
+    </Label>
+    <TextField fx:id="INT" focusTraversable="false" layoutX="334.0" layoutY="19.0" onAction="#calcC4" prefHeight="25.0" prefWidth="23.0" text="6">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </TextField>
+    <Button layoutX="170.0" layoutY="47.0" mnemonicParsing="false" onAction="#calculate" prefHeight="25.0" prefWidth="188.0" text="Button" visible="false" />
+    <TextArea fx:id="ta" focusTraversable="false" layoutY="142.0" prefHeight="379.0" prefWidth="377.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0" />
+    <Label fx:id="l4About" alignment="CENTER" contentDisplay="CENTER" layoutX="117.0" layoutY="119.0" onMouseClicked="#showAbout" prefHeight="17.0" prefWidth="254.0" text="About" underline="true" />
+    <CheckBox fx:id="AGED" layoutX="3.0" layoutY="119.0" mnemonicParsing="false" onMouseClicked="#printDetails" prefHeight="17.0" prefWidth="157.0" text="Age FLUX (1y+) for INT" />
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="310.0" layoutY="1.0" onMouseClicked="#randomGenes" prefHeight="15.0" prefWidth="14.0" text="G">
+      <font>
+        <Font size="10.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

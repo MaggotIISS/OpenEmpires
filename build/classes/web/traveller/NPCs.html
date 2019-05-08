@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>NPCs</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <!-- traveller/TravellerScripts.js -->
+    <script src="traveller/TravellerScripts.js"></script>
+    <style>
+      #traveller {
+        background-color: black;
+        text-align: center;
+      }
+      #right {
+        background-color: black;
+        text-align: right;
+      }
+      body {
+        background-color: black;
+        color: red;
+      }
+    </style>
+  </head>
+  <body onpageshow="myFunction()">
+    <!-- Traveller -->
+    <div>
+      <h1>
+        <p id="traveller" class="w3-container w3-black w3-text-red w3-hover-text-green text-align: center;">
+          <a href="file:///C://TED/Web/src/iiss/maggot/t5/web/TLinks.html">Traveller</a>
+        </p>
+      </h1>
+    </div>
+    <div id="traveller">
+      <a class="w3-text-white" href="file:///C:/TED/Web/src/iiss/maggot/t5/web/AllLinks.html">AllLinks</a>
+    </div>
+    <hr/>
+    <!-- Bob -->
+    <div>
+      <!-- Show Name -->
+      <p id="name"></p>
+      <script>
+        var NAME = "NAME: Bob";
+        document.getElementById("name").innerHTML = NAME;
+      </script>
+    </div>
+    <div>
+      <!-- Show UPP -->
+      <p id="upp"></p>
+      <script>
+        var CAREER = "CAREER: Army";
+        document.getElementById("career").innerHTML = CAREER;
+      </script>
+    </div>
+    <div>
+      <!-- Show UPP -->
+      <p id="upp"></p>
+      <script>
+        var UPP = "UPP: 777777";
+        document.getElementById("upp").innerHTML = UPP;
+      </script>
+    </div>
+    <div>
+      <!-- Show NOTE -->
+      <p id="note"></p>
+      <script>
+        var NOTE = "NOTE: Works at Starport";
+        document.getElementById("note").innerHTML = NOTE;
+      </script>
+    </div>
+    <hr/>
+    <!-- Harry -->
+    <div>
+      <p id="line1"></p>
+      <p id="line2"></p>
+      <p id="line3"></p>
+      <p id="line4"></p>
+    </div>
+    <script>
+      document.getElementById("line1").innerHTML = "NAME: Harry";
+      document.getElementById("line2").innerHTML = "CAREER: Army";
+      document.getElementById("line3").innerHTML = "UPP: 888888";
+      document.getElementById("line4").innerHTML = "NOTE: Works at Starport";
+    </script>
+    <hr/>
+    <!-- Carl -->
+    <div>
+      <p id="card2"></p>
+      <script>
+        var line1 = "Carl";
+        var line2 = "Army";
+        var line3 = "999999";
+        var line4 = "Patrols";
+        var br = "<br/>";
+        var total = line1 + br + line2 + br + line3 + br + line4;
+        document.getElementById("card2").innerHTML = total;
+      </script>
+    </div>
+    <hr/>
+    <!-- JSON Bobs Worlds-->
+    <div>
+      <!-- setup npcObject listbox -->
+      <div id="listbox">
+        <!-- show npcObject -->
+        <form>
+          <select id="mySelect" onchange="myFunction()">
+            <option>Regina</option>
+            <option>Roup</option>
+            <option>Feri</option>
+            <option>Boughene</option>
+            <option>Efate</option>
+            <option>Lysen</option>
+            <option>Jewell</option>
+          </select>
+        </form>
+        <!-- <p id="npcDisplay"></p> -->
+        <p id="npcDisplay"></p>
+        <script>
+          var text = '{"npcs":[' +
+                  '{"World":"Regina","LastName":"Doe","Number":"0" },' +
+                  '{"World":"Roup","LastName":"Smith","Number":"1" },' +
+                  '{"World":"Feri","LastName":"Jones","Number":"2" },' +
+                  '{"World":"Boughene","LastName":"Beech","Number":"3" },' +
+                  '{"World":"Efate","LastName":"Hammon","Number":"4" },' +
+                  '{"World":"Lysen","LastName":"Artica","Number":"5" },' +
+                  '{"World":"Jewell","LastName":"Pesal","Number":"6" }]}';
+          obj = JSON.parse(text);
+          var i = document.getElementById("npcDisplay");
+          document.getElementById("npcDisplay").innerHTML = i;
+        </script>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("mySelect");
+        var i = x.selectedIndex;
+        document.getElementById("npcDisplay").innerHTML = obj.npcs[i].World + " - Bob " + obj.npcs[i].LastName + " - " + obj.npcs[i].Number;
+      }
+    </script>
+    <hr/>
+    <div id="demo">
+
+    </div>
+    <hr/>
+    <!-- Open/Close Window -->
+    <div>
+      <button onclick="openWin()">Open "myWindow"</button>
+      <button onclick="closeWin()">Close "myWindow"</button>
+      <br>
+      <button onclick="checkWin()">Has "myWindow" been closed?</button>
+      <br>
+      <div id="msg"></div>
+      <script>
+        var myWindow;
+        function openWin() {
+          myWindow = window.open("", "myWindow", "width=400, height=200");
+        }
+        function closeWin() {
+          if (myWindow) {
+            myWindow.close();
+          }
+        }
+        function checkWin() {
+          if (!myWindow) {
+            document.getElementById("msg").innerHTML = "'myWindow' has never been opened!";
+          } else {
+            if (myWindow.closed) {
+              document.getElementById("msg").innerHTML = "'myWindow' has been closed!";
+            } else {
+              document.getElementById("msg").innerHTML = "'myWindow' has not been closed!";
+            }
+          }
+        }
+      </script>
+    </div>
+    <hr/>
+    <!-- JSON Bobs Worlds-->
+    <div>
+      <!-- setup npcObject listbox -->
+      <div id="listbox2">
+        <!-- show npcObject -->
+        <form>
+          <select id="mySelect2" onchange="myFunction2()">
+            <option>Regina</option>
+            <option>Roup</option>
+            <option>Feri</option>
+            <option>Boughene</option>
+            <option>Efate</option>
+            <option>Lysen</option>
+            <option>Jewell</option>
+          </select>
+        </form>
+        <!-- <p id="npcDisplay2"></p> -->
+        <p id="npcDisplay2"></p>
+        <script>
+          var text2 = '{"npc":[' +
+                  '{"World":"Regina","LastName":"Doe","Number":"0" },' +
+                  '{"World":"Roup","LastName":"Smith","Number":"1" },' +
+                  '{"World":"Feri","LastName":"Jones","Number":"2" },' +
+                  '{"World":"Boughene","LastName":"Beech","Number":"3" },' +
+                  '{"World":"Efate","LastName":"Hammon","Number":"4" },' +
+                  '{"World":"Lysen","LastName":"Artica","Number":"5" },' +
+                  '{"World":"Jewell","LastName":"Pesal","Number":"6" }]}';
+          obj = JSON.parse(text2);
+          var i = document.getElementById("npcDisplay2");
+          document.getElementById("npcDisplay2").innerHTML = i;
+        </script>
+      </div>
+    </div>
+    <script>
+      function myFunction2() {
+        var x = document.getElementById("mySelect2");
+        var i = x.selectedIndex;
+        document.getElementById("npcDisplay2").innerHTML = obj.npc[i].World + " - Bob " + obj.npc[i].LastName + " - " + obj.npc[i].Number;
+      }
+    </script>
+    <!-- <img src="../../../../T5/Vland/P Kakadan/2737 Kesali/Kesali (world) - Traveller_files/2737 Kesali.gif" width="200" height="100" alt="2737 Kesali"/>-->
+    <!-- <img src="file:///C://T5/_Gif/0GWpn.gif" width="65" height="55" alt="2737 Kesali"/> -->LIR
+
+  </body>
+</html>

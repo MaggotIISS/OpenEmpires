@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- COMMENT //http://www.w3schools.com/xsl/xsl_w3celementref.asp -->
+<html>
+  <head>
+    <title id="titleid">
+      TITLE
+    </title>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script id="loadxmldoc">
+      function loadXMLDoc(filename)
+      {
+        if (window.ActiveXObject)
+        {
+          xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+        } else
+        {
+          xhttp = new XMLHttpRequest();
+        }
+        xhttp.open("GET", filename, false);
+        try {
+          xhttp.responseType = "msxml-document"
+        } catch (err) {
+        } // Helping IE11
+        xhttp.send("");
+        return xhttp.responseXML;
+      }
+
+      function displayResult()
+      {
+        xml = loadXMLDoc(XMLDOC);
+        xsl = loadXMLDoc(XSLDOC);
+        // code for IE
+        if (window.ActiveXObject || xhttp.responseType == "msxml-document")
+        {
+          ex = xml.transformNode(xsl);
+          document.getElementById("example").innerHTML = ex;
+        }
+        // code for Chrome, Firefox, Opera, etc.
+        else if (document.implementation && document.implementation.createDocument)
+        {
+          xsltProcessor = new XSLTProcessor();
+          xsltProcessor.importStylesheet(xsl);
+          resultDocument = xsltProcessor.transformToFragment(xml, document);
+          document.getElementById("example").appendChild(resultDocument);
+        }
+      }
+
+    </script>
+    <script id="headscripts">SCRIPT</script>
+  </head>
+  <body>
+    <header id="header">
+      HEADER
+    </header>
+    <h2>HEADING</h2><br/>
+    <div>
+      PICS<br/>
+      <img id="picture" src="PICTURE" alt="PICTURE"/><br/>
+    </div>
+    <div>
+      <button id="example">TABLE</button>
+    </div>
+    <div>
+      INTRO<br/>
+      TEXT<br/>
+      <button id="button" onclick="displayButton()">EDIT</button><br/>
+      <script id="displayButton">
+        function displayButton() {
+          document.getElementById("button").innerHTML = "EDITING";
+        }
+      </script>
+      FOOTNOTE<br/>
+    </div>
+    <footer id="footer">
+      FOOTER<br><br/>
+    </footer>
+  </body>
+</html>

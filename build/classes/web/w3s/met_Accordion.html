@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div>
+      <button class="accordion">About</button>
+      <div class="panel">
+        <p>Programmed by Mark Ferguson	(maggot.iiss@sky.com)<br/><br/>
+          <a href="https://github.com/MaggotIISS">MaggotIISS</a><br/><br/>
+          The Traveller game in all forms is owned by Far Future Enterprises. <br/>
+          Copyright 1977 - 20016 Far Future Enterprises. <br/><br/>
+          Traveller is a registered trademark of Far Future Enterprises. <br/>
+          Far Future permits web sites and fanzines for this game, provided <br/>
+          it contains this notice, that Far Future is notified, and subject <br/>
+          to a withdrawal of permission on 90 days notice. <br/><br/>
+          The contents of this site are for personal, non-commercial use only. <br/><br/>
+          Any use of Far Future Enterprises's copyrighted material or <br/>
+          trademarks anywhere on this web site and its files should not <br/>
+          be viewed as a challenge to those copyrights or trademarks. <br/>
+          In addition, any program/articles/file on this site cannot be <br/>
+          republished or distributed without the consent of <br/>
+          the author who contributed it.<br/>
+
+
+          Engegueklii Aggushdakemgam- Duke of Kesali (Vland/2737)
+          :) As One!<br/><br/>
+
+          Marx Sagaa - Baron of Fraynj (Gushmege/1623)<br/>
+          :-| The man didn`t know which way to run, so I run him over!<br/><br/>
+
+          Lt. Max `OverDrive` Odie - #279, 4518th LIR<br/>
+          MCG Battle of Mongo<br/>
+          :-| Hit Hard, Hit Fast, Go Home.<br/><br/>
+
+          TAS Member (BEARER) DELP 0918 GALIS E425133-9<br/>
+          MCG The Final Victory At Uakye<br/>
+          ;-} Heaven can wait<br/><br/>
+          Programmed by Mark Ferguson	(maggot.iiss@sky.com)<br/><br/>
+          <a href="https://github.com/MaggotIISS">MaggotIISS</a><br/><br/>
+        </p>
+        <style>
+          button.accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+          }
+          button.accordion.active, button.accordion:hover {
+            background-color: #ccc;
+          }
+          div.panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+          }
+        </style>
+
+      </div>
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].onclick = function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>
+

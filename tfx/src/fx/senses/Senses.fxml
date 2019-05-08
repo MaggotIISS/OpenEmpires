@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.senses.SensesController">
+  <children>
+    <ComboBox fx:id="race" onAction="#raceChange" prefWidth="100.0" />
+    <ComboBox fx:id="cb" layoutX="100.0" onAction="#senseChange" onMouseClicked="#senseClick" prefHeight="25.0" prefWidth="100.0" />
+    <AnchorPane layoutX="-3.0" layoutY="25.0" prefHeight="110.0" prefWidth="199.0">
+      <children>
+        <Label fx:id="a" layoutX="5.0" text="V=VISION">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+        <Label fx:id="b" layoutX="17.0" layoutY="27.0" text="V">
+          <font>
+            <Font name="System Bold" size="32.0" />
+          </font>
+        </Label>
+        <Label fx:id="c" alignment="CENTER" layoutX="65.0" layoutY="27.0" prefHeight="47.0" prefWidth="46.0" text="16" textAlignment="CENTER">
+          <font>
+            <Font name="System Bold" size="32.0" />
+          </font>
+        </Label>
+        <Label fx:id="l1" layoutX="136.0" layoutY="27.0" text="R">
+          <font>
+            <Font name="System Bold" size="32.0" />
+          </font>
+        </Label>
+        <Label fx:id="l2" layoutX="172.0" layoutY="27.0" prefHeight="38.0" prefWidth="22.0">
+          <font>
+            <Font name="System Bold" size="32.0" />
+          </font>
+        </Label>
+        <Label fx:id="l3">
+          <font>
+            <Font name="System Bold" size="32.0" />
+          </font>
+        </Label>
+        <Label fx:id="l4" layoutX="198.0" layoutY="27.0">
+          <font>
+            <Font name="System Bold" size="32.0" />
+          </font>
+        </Label>
+        <Label fx:id="la" layoutX="137.0" layoutY="87.0" text="R" />
+        <Label fx:id="lb" layoutX="153.0" layoutY="87.0" text="R" />
+        <Label fx:id="lc" layoutX="168.0" layoutY="87.0" text="R" />
+        <Label fx:id="ld" layoutX="185.0" layoutY="87.0" text="R" />
+        <Label layoutX="44.0" layoutY="27.0" text="-">
+          <font>
+            <Font name="System Bold" size="32.0" />
+          </font>
+        </Label>
+        <Label layoutX="115.0" layoutY="27.0" text="-">
+          <font>
+            <Font name="System Bold" size="32.0" />
+          </font>
+        </Label>
+        <Label layoutX="4.0" layoutY="87.0" text="Human = " />
+        <Label fx:id="con" layoutX="81.0" layoutY="87.0" text="16" />
+        <Label fx:id="STRING" layoutX="152.0" layoutY="6.0" text="string" />
+      </children>
+    </AnchorPane>
+    <Label fx:id="laba" layoutY="135.0" onMouseClicked="#line1" text="Label" textFill="RED" />
+    <Label fx:id="labb" layoutY="152.0" onMouseClicked="#line2" text="Label" textFill="RED" />
+    <Label fx:id="labc" layoutY="169.0" onMouseClicked="#line3" text="Label" textFill="RED" />
+    <Label fx:id="labd" layoutY="186.0" onMouseClicked="#line4" text="Label" textFill="RED" />
+    <Label fx:id="labe" layoutY="203.0" onMouseClicked="#line5" text="Label" textFill="RED" />
+    <Label fx:id="labf" layoutY="220.0" onMouseClicked="#line6" text="Label" textFill="RED" />
+    <Label fx:id="labg" layoutY="237.0" onMouseClicked="#line7" text="Label" textFill="RED" />
+    <Label fx:id="l4About" alignment="CENTER" contentDisplay="CENTER" layoutY="267.0" onMouseClicked="#showAbout" prefHeight="17.0" prefWidth="170.0" text="About" textFill="RED" underline="true" />
+    <TextArea fx:id="ta" focusTraversable="false" layoutX="223.0" prefHeight="284.0" prefWidth="177.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="223.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="0.0" />
+    <Label fx:id="out1" layoutX="114.0" layoutY="135.0" />
+    <Label fx:id="out2" layoutX="114.0" layoutY="152.0" />
+    <Label fx:id="out3" layoutX="114.0" layoutY="169.0" />
+    <Label fx:id="out4" layoutX="114.0" layoutY="186.0" />
+    <Label fx:id="out5" layoutX="114.0" layoutY="203.0" />
+    <Label fx:id="out6" layoutX="114.0" layoutY="220.0" />
+    <Label fx:id="out7" layoutX="114.0" layoutY="237.0" />
+  </children>
+</AnchorPane>

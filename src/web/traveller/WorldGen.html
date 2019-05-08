@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>WorldGen</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <!-- traveller/TravellerScripts.js -->
+    <script src="traveller/TravellerScripts.js"></script>
+    <style>
+      #traveller {
+        background-color: black;
+        text-align: center;
+      }
+      #right {
+        background-color: black;
+        text-align: right;
+      }
+      body {
+        background-color: black;
+        color: red;
+      }
+    </style>
+  </head>
+  <body onpageshow="myFunction()">
+    <a href="https://www.w3schools.com/js/js_json_intro.asp">JSON @w3Schools</a><br/>
+    <hr/>
+    <div>
+      <!-- JSON Worlds-->
+      <div>
+        <!-- setup worlds Object listbox -->
+        <div id="listbox">
+          <!-- show worldsObject menu-->
+          <form>
+            <select id="mySelect" onchange="myFunction()">
+              <!-- see note below -->
+              <option>Example</option>
+              <option>Example2</option>
+            </select>
+          </form>
+          <!-- <p id="worldDisplay"></p> -->
+          <p id="worldDisplay"></p>
+          <script>
+            var text = '{"worlds":[' +
+
+
+            <!-- TEXT BELOW TO BE EXCHANGED (and change menu above to link up) -->
+            '{"World":"Example","Starport":"A","Size":"7","Atmos":"7","Hydro":"7","Pop":"7","Govt":"7","Law":"7","DASH":"-","TL":"7" },' +
+            '{"World":"Example2","Starport":"X","Size":"7","Atmos":"7","Hydro":"7","Pop":"0","Govt":"0","Law":"0","DASH":"-","TL":"0" }' +
+            <!-- Last line does not have a comma at end -->
+
+
+            ']}';
+            obj = JSON.parse(text);
+            var i = document.getElementById("worldDisplay");
+            document.getElementById("worldDisplay").innerHTML = i;
+          </script>
+          <script>
+            function myFunction() {
+            var x = document.getElementById("mySelect");
+            var i = x.selectedIndex;
+            document.getElementById("worldDisplay").innerHTML = obj.worlds[i].World
+            + "  " + obj.worlds[i].Starport + obj.worlds[i].Size + obj.worlds[i].Atmos
+            + obj.worlds[i].Hydro + obj.worlds[i].Pop + obj.worlds[i].Govt
+            + obj.worlds[i].Law + obj.worlds[i].DASH + obj.worlds[i].TL;
+            }
+          </script>
+        </div>
+        <!-- Notes -->
+      </div>
+      <br/>
+      Copy top of file to a variable (listing0 ?)<br/>
+      Copy bottom of file after data area (listing2 ?)<br/>
+      Replace world data in Menu and Script areas<br/>
+      Save file from (list0 + data + list2) as HTML<br/>
+    </div>
+  </body>
+</html>

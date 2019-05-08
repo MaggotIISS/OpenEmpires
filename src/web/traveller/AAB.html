@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>A.A.B.</title>
+    <!-- <meta charset="UTF-8"/>-->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"  />-->
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>-->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <!-- traveller/TravellerScripts.js -->
+    <script src="TravellerScripts.js"></script>
+    <script>
+      function openOption(evt, worldName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace("active", "");
+        }
+        document.getElementById(worldName).style.display = "block";
+        evt.currentTarget.className += "active";
+      }
+    </script>
+    <style>
+      body {font-family: Arial; background-color: black; color: red;}
+      #traveller {
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+      #group {
+        background-color: lime;
+        color: black;
+        text-align: center;
+      }
+
+      /* Style the tab */
+      div.tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: orange;
+      }
+
+      /* Style the buttons inside the tab */
+      div.tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+
+      /* Change background color of buttons on hover */
+      div.tab button:hover {
+        background-color: #ddd;
+      }
+
+      /* Create an active/current tablink class */
+      div.tab button.active {
+        background-color: #ccc;
+      }
+
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        padding: 5px 10px;
+        border: 1px solid #777;
+        border-top: none;
+      }
+
+      .center {
+        display:block;
+        margin:auto;
+      }
+    </style>
+    <div class="center">
+      <img src="data:image/gif;base64,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"
+           width="100" height="100" alt="ImperialSunBurst" class="center" onclick="check()" />
+      <h1 id="traveller" class="w3-container w3-black w3-text-red
+           w3-hover-text-green text-align: center;">
+          <a href="file:///C:/TED/Web/src/iiss/maggot/t5/web/TLinks.html">Traveller</a>
+      </h1>
+    </div>
+    <hr/>
+    <h1 id="traveller" class="w3-container w3-black w3-text-white w3-hover-text-red text-align: center;">
+        <a href="">A.A.B.</a>
+    </h1>
+    <hr/>
+    <!-- ShowGroupCard -->
+    <div id="ShowGroupCard" class="w3-container w3-yellow w3-centered w3-card">
+      <div>
+        <img src="../../../../../../../../T5/_T5 Image Library/ImperialSunBurst48.gif"
+             width="48" height="48" alt="ImperialSunBurst48"/>
+      </div>
+      <div id="Parent" class="w3-lime">
+        <div>
+          <form>
+            <div id="GroupLabel">
+              <input  type="text" name="GroupName" value="System Map Details" id="groupname"/>GROUP<div id="group"></div>
+            </div>
+            <div id="NoteLabel">
+              <input  type="text" name="NoteName" value="Note" id="notename"/>NOTE<div id="note"></div>
+            </div>
+            <div id="NumLabel">
+              <input  type="text" name="NumName" value="Regina,Roup,Feri,Boughene,Efate,Lysen,Jewell" id="numname"/>TABNAMES,<div id="num"></div>
+            </div>
+            <button id="okbutton" onclick="process()">OK</button>
+            <script>
+              function process() {
+                var group = document.getElementById("groupname").innerHTML;
+                //if (group !== "") {
+                document.getElementById("group").innerHTML = group;
+                console.log("group = " + group);
+                //}
+                var note = document.getElementById("notename").innerHTML;
+                //if (note !== "") {
+                document.getElementById("note").innerHTML = note;
+                console.log("note = " + note);
+                //}
+                var num = document.getElementById("numname").innerHTML;
+                //if (num !== "") {
+                document.getElementById("num").innerHTML = num;
+                console.log("num = " + num);
+                //}
+                debugger
+              }
+            </script>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Check for Number -->
+    <div>
+      <h2>JavaScript Can Validate Input</h2>
+      <p>Please input a number between 1 and 10:</p>
+      <input id="numb">
+      <button type="button" onclick="myFunction()">Submit</button>
+      <p id="demo"></p>
+      <script>
+        function myFunction() {
+          var x, text;
+          // Get the value of the input field with id="numb"
+          x = document.getElementById("numb").value;
+          // If x is a Number between 1 & 10
+          if (isNaN(x) || x < 1 || x > 10) {
+            text = "Input not valid";
+          } else {
+            text = "Input OK";
+          }
+          document.getElementById("demo").innerHTML = text;
+        }
+      </script>
+    </div>
+    <!--  -->
+    <hr/>
+    nav> - Defines a container for navigation links /nav><br/>
+    section> - Defines a section in a document /section><br/>
+    article> - Defines an independent self-contained article /article><br/>
+    aside> - Defines content aside from the content (like a sidebar) /aside><br/>
+    footer> - Defines a footer for a document or a section /footer><br/>
+    details> - Defines additional details /details><br/>
+    summary> - Defines a heading for the details element /summary><br/>
+    <hr/>
+    <br/>
+    <i class="fa fa-car" ></i>&nbsp;CAR<br/>
+    <i class="fa fa-plane" ></i>&nbsp;PLANE<br/>
+    <i class="fa fa-folder" ></i>&nbsp;FOLDER<br/>
+    <i class="fa fa-file"></i>&nbsp;FILE<br/>
+    <hr/>
+    <br/>
+    <em>em>(emphasized text)/em></em><br/>
+    <strong>strong>(important text)/strong></strong><br/>
+    <mark>mark>(marked/highlighted text)/mark></mark><br/>
+    <cite>cite>(the title of a work)/cite></cite><br/>
+    <dfn>dfn>(a definition term)/dfn></dfn><br/>
+    <hr/>
+    <br/>
+    <img src="https://github.com/MaggotIISS/T5/blob/master/Spinward%20Marches/C%20Regina/1910%20Regina/1910%20Regina/1910%20Regina.gif" width="200" height="100" alt="Regina Mainworld Details"/>
+
+
+  </body>
+</html>

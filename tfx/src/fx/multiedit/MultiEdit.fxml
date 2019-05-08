@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="216.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.multiedit.MultiEdit">
+  <children>
+    <ComboBox fx:id="combobox" editable="false" layoutY="0" onAction="#comboaction" onKeyTyped="#checkText" onMouseClicked="#comboClick" prefHeight="25.0" prefWidth="149.0" />
+    <Button fx:id="button" graphicTextGap="0.0" layoutX="308.0" layoutY="25.0" onAction="#buttonClick" prefHeight="17.0" prefWidth="44.0" text="Map" />
+    <Label fx:id="label" layoutX="174.0" layoutY="4.0" minHeight="16" minWidth="44.0" onMouseClicked="#labelClick" prefHeight="17.0" prefWidth="92.0" text="Label" />
+    <TextArea fx:id="textarea" editable="false" layoutY="28.0" prefHeight="188.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+    <Label fx:id="openlabel" disable="false" layoutX="325.0" layoutY="4.0" onMouseClicked="#openlabelClick" text="O" />
+    <Label fx:id="savelabel" disable="false" layoutX="342.0" layoutY="4.0" onMouseClicked="#savelabelClick" text="S" />
+    <CheckBox id="CheckBox" fx:id="checkbox" graphicTextGap="0.0" layoutX="153.0" layoutY="4.0" mnemonicParsing="false" onAction="#checkCheck" prefHeight="17.0" prefWidth="7.0" selected="false" />
+      <Label fx:id="keylabel" layoutX="301.0" layoutY="4.0" onMouseClicked="#keyClick" text="K" />
+      <Label fx:id="valuelabel" layoutX="313.0" layoutY="4.0" onMouseClicked="#valueClick" text="V" />
+      <Label layoutX="282.0" layoutY="4.0" onMouseClicked="#fillform" text="F" />
+  </children>
+</AnchorPane>

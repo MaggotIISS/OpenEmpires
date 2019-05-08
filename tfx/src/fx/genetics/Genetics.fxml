@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane prefHeight="850.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.genetics.GeneticsController">
+  <content>
+    <Pane prefHeight="850.0" prefWidth="800.0">
+      <children>
+        <AnchorPane layoutY="3.0" prefHeight="114.0" prefWidth="260.0">
+          <children>
+            <CheckBox fx:id="cb" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" mnemonicParsing="false" onAction="#checkBest" prefHeight="17.0" prefWidth="81.0" text="Standard" />
+            <Label layoutX="14.0" layoutY="20.0" onMouseClicked="#randomUpp" text="UPP" />
+            <TextField fx:id="upp" layoutX="55.0" layoutY="16.0" prefHeight="25.0" prefWidth="89.0" />
+            <Label layoutX="12.0" layoutY="44.0" onMouseClicked="#dnaClick" text="DNA" />
+            <TextField fx:id="dna" layoutX="55.0" layoutY="40.0" prefHeight="25.0" prefWidth="89.0" />
+            <Label layoutX="11.0" layoutY="68.0" onMouseClicked="#domClick" text="DOM" />
+            <TextField fx:id="dom" layoutX="55.0" layoutY="64.0" onAction="#randomize" prefHeight="25.0" prefWidth="89.0" />
+            <Label layoutX="13.0" layoutY="92.0" onMouseClicked="#diceClick" text="DICE" />
+            <TextField fx:id="dice" editable="false" layoutX="55.0" layoutY="89.0" onAction="#randomize" prefHeight="25.0" prefWidth="89.0" />
+            <ComboBox fx:id="cb4sex" layoutX="150.0" layoutY="40.0" onAction="#cb4SexClick" onMouseClicked="#sexClick" prefHeight="25.0" prefWidth="106.0" />
+            <ComboBox fx:id="cb4gen" layoutX="150.0" layoutY="64.0" onAction="#cb4genClick" onMouseClicked="#dnaClick" prefHeight="25.0" prefWidth="106.0" />
+            <Label fx:id="l4droid" layoutX="150.0" layoutY="93.0" onDragDetected="#l4droidClick" onMouseClicked="#l4droidClick" prefHeight="17.0" prefWidth="68.0" text="Sophont" />
+            <Label layoutX="98.0" onMouseClicked="#createSample" text="Example" />
+            <Label fx:id="type" layoutX="150.0" onMouseClicked="#typeChange" text="Standard" />
+            <TextField fx:id="contribs" editable="false" layoutX="204.0" layoutY="-4.0" prefHeight="25.0" prefWidth="24.0" promptText="num" text="2" />
+            <ComboBox fx:id="cb4race" layoutX="150.0" layoutY="16.0" onAction="#getRace" onMouseClicked="#raceClick" prefHeight="25.0" prefWidth="106.0" />
+            <Button fx:id="btn" layoutX="223.0" layoutY="88.0" mnemonicParsing="false" onAction="#btnClick" prefHeight="44.0" prefWidth="36.0" text="Go" />
+            <Label fx:id="l4lineage" layoutX="235.0" onMouseClicked="#lineageChange" text="M" />
+          </children>
+        </AnchorPane>
+        <AnchorPane id="AnchorPane" layoutY="114.0" prefHeight="717.0" prefWidth="262.0">
+          <children>
+            <Label fx:id="l4dna" layoutX="1.0" layoutY="4.0" onMouseClicked="#l4dnaClick" text="DNA" />
+            <Label fx:id="l4genes" layoutX="36.0" layoutY="4.0" onMouseClicked="#l4geneClick" text="SDEIES" />
+            <Label fx:id="l4dice" alignment="CENTER" layoutX="78.0" layoutY="4.0" minHeight="16" minWidth="20.0" onMouseClicked="#l4diceClick" prefHeight="17.0" prefWidth="26.0" text="12" />
+            <Label fx:id="l4d" layoutX="102.0" layoutY="4.0" prefHeight="17.0" prefWidth="11.0" text="D" />
+            <Label fx:id="l4mod" alignment="BOTTOM_LEFT" contentDisplay="CENTER" layoutX="117.0" layoutY="4.0" onMouseClicked="#l4modClick" prefHeight="17.0" prefWidth="19.0" text="+0" textAlignment="RIGHT" />
+            <Button fx:id="button" layoutX="176.0" prefHeight="25.0" prefWidth="84.0" text="GO" visible="false" />
+            <Label fx:id="l4len" layoutX="142.0" layoutY="4.0" onMouseClicked="#getStageLengths" text="StageLengths" />
+            <ScrollPane layoutY="53.0" maxWidth="-Infinity" prefHeight="664.0" prefViewportHeight="241.0" prefViewportWidth="260.0" prefWidth="262.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+              <content>
+                <TextArea fx:id="ta4out" editable="false" layoutY="25.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="660.0" prefWidth="260.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
+              </content>
+            </ScrollPane>
+            <Label fx:id="l4About" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="29.0" onMouseClicked="#showAbout" prefHeight="17.0" prefWidth="234.0" text="About" underline="true" />
+          </children>
+        </AnchorPane>
+        <GridPane fx:id="PC" focusTraversable="true" layoutX="270.0" pickOnBounds="false" prefHeight="200.0" prefWidth="250.0">
+          <children>
+            <Label prefHeight="17.0" prefWidth="92.0" text="PC GENETICS" GridPane.columnSpan="2147483647">
+              <font>
+                <Font name="System Bold" size="12.0" />
+              </font>
+            </Label>
+            <Label fx:id="l4n0" onMouseClicked="#clearNames" text="Family Name" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="94.0" text="Current UPP" GridPane.rowIndex="5">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="95.0" text="Genetic DNA" GridPane.rowIndex="6">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="95.0" text="DOM" GridPane.rowIndex="7">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label text="FirstName" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <TextField fx:id="FamilyName" GridPane.columnIndex="1" GridPane.columnSpan="6" GridPane.rowIndex="1" />
+            <Label text="C1" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="C2" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label text="C3" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label text="C4" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label text="C5" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label text="C6" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <TextField fx:id="g1cu1" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu1" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du1" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu2" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu2" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du2" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu3" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu3" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du3" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu4" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu4" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du4" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu5" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu5" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du5" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu6" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu6" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du6" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Label text="Gender" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <TextField fx:id="Name1" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+            <TextField editable="false" text="0" GridPane.columnIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </TextField>
+            <TextField fx:id="Gender1" editable="false" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+        <GridPane fx:id="CLONE" focusTraversable="true" layoutX="520.0" pickOnBounds="false" prefHeight="200.0" prefWidth="250.0">
+          <children>
+            <Label fx:id="l4_1" prefHeight="17.0" prefWidth="130.0" text="CLONE GENETICS" GridPane.columnSpan="2147483647">
+              <font>
+                <Font name="System Bold" size="12.0" />
+              </font>
+            </Label>
+            <Label fx:id="l4n_1" text="Family Name" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="94.0" text="Current UPP" GridPane.rowIndex="5">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="95.0" text="Genetic DNA" GridPane.rowIndex="6">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="95.0" text="DOM" GridPane.rowIndex="7">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label text="FirstName" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <TextField fx:id="FamilyName21" GridPane.columnIndex="1" GridPane.columnSpan="6" GridPane.rowIndex="1" />
+            <Label text="C1" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="C2" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label text="C3" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label text="C4" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label text="C5" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label text="C6" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <TextField fx:id="g1cu121" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu121" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du121" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu221" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu221" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du221" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu321" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu321" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du321" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu421" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu421" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du421" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu521" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu521" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du521" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu621" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu621" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du621" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Label text="Gender" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <TextField fx:id="Name121" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+            <TextField fx:id="Gender121" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+            <TextField fx:id="CloneKid" editable="false" text="-1" GridPane.columnIndex="3">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </TextField>
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+
+        <GridPane fx:id="MOTHER" disable="true" focusTraversable="true" layoutX="270.0" layoutY="210.0" pickOnBounds="false" prefHeight="200.0" prefWidth="250.0">
+          <children>
+            <Label prefHeight="17.0" prefWidth="112.0" text="MUM GENETICS" GridPane.columnSpan="2147483647">
+              <font>
+                <Font name="System Bold" size="12.0" />
+              </font>
+            </Label>
+            <Label text="Family Name" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="94.0" text="Current UPP" GridPane.rowIndex="5">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="95.0" text="Genetic DNA" GridPane.rowIndex="6">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="95.0" text="DOM" GridPane.rowIndex="7">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label text="Parent1" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <TextField fx:id="FamilyName1" GridPane.columnIndex="1" GridPane.columnSpan="6" GridPane.rowIndex="1" />
+            <Label text="C1" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="C2" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label text="C3" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label text="C4" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label text="C5" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label text="C6" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <TextField fx:id="g1cu11" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu11" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du11" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu21" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu21" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du21" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu31" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu31" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du31" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu41" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu41" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du41" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu51" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu51" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du51" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu61" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu61" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du61" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Label text="Gender" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <TextField fx:id="Name11" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+            <TextField fx:id="Gender11" editable="false" text="Female" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+            <TextField editable="false" text="1" GridPane.columnIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </TextField>
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+        <GridPane fx:id="FATHER" disable="true" focusTraversable="true" layoutX="520.0" layoutY="210.0" pickOnBounds="false" prefHeight="200.0" prefWidth="250.0">
+          <children>
+            <Label prefHeight="17.0" prefWidth="92.0" text="DAD GENETICS" GridPane.columnSpan="2147483647">
+              <font>
+                <Font name="System Bold" size="12.0" />
+              </font>
+            </Label>
+            <Label text="Family Name" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="94.0" text="Current UPP" GridPane.rowIndex="5">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="95.0" text="Genetic DNA" GridPane.rowIndex="6">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="95.0" text="DOM" GridPane.rowIndex="7">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label text="Parent2" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <TextField fx:id="FamilyName2" GridPane.columnIndex="1" GridPane.columnSpan="6" GridPane.rowIndex="1" />
+            <Label text="C1" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="C2" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label text="C3" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label text="C4" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label text="C5" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label text="C6" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <TextField fx:id="g1cu12" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu12" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du12" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu22" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu22" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du22" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu32" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu32" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du32" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu42" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu42" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du42" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu52" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu52" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du52" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu62" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu62" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du62" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Label text="Gender" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <TextField fx:id="Name12" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+            <TextField fx:id="Gender12" editable="false" text="Male" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+            <TextField editable="false" text="2" GridPane.columnIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </TextField>
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+
+        <GridPane fx:id="PARENT3" disable="true" focusTraversable="true" layoutX="270.0" layoutY="420.0" pickOnBounds="false" prefHeight="200.0" prefWidth="250.0">
+          <children>
+            <Label prefHeight="17.0" prefWidth="92.0" text="DNA GENETICS" GridPane.columnSpan="2147483647">
+              <font>
+                <Font name="System Bold" size="12.0" />
+              </font>
+            </Label>
+            <Label text="Family Name" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="94.0" text="Current UPP" GridPane.rowIndex="5">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="95.0" text="Genetic DNA" GridPane.rowIndex="6">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="95.0" text="DOM" GridPane.rowIndex="7">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label text="Parent3" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <TextField fx:id="FamilyName11" GridPane.columnIndex="1" GridPane.columnSpan="6" GridPane.rowIndex="1" />
+            <Label text="C1" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="C2" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label text="C3" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label text="C4" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label text="C5" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label text="C6" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <TextField fx:id="g1cu111" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu111" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du111" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu211" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu211" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du211" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu311" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu311" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du311" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu411" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu411" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du411" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu511" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu511" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du511" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu611" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu611" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du611" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Label text="Gender" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <TextField fx:id="Name111" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+            <TextField fx:id="Gender111" editable="false" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+            <TextField editable="false" text="3" GridPane.columnIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </TextField>
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+        <GridPane fx:id="PARENT4" disable="true" focusTraversable="true" layoutX="520.0" layoutY="420.0" pickOnBounds="false" prefHeight="200.0" prefWidth="250.0">
+          <children>
+            <Label prefHeight="17.0" prefWidth="92.0" text="DNA GENETICS" GridPane.columnSpan="2147483647">
+              <font>
+                <Font name="System Bold" size="12.0" />
+              </font>
+            </Label>
+            <Label text="Family Name" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="94.0" text="Current UPP" GridPane.rowIndex="5">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="95.0" text="Genetic DNA" GridPane.rowIndex="6">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="95.0" text="DOM" GridPane.rowIndex="7">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label text="Parent4" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <TextField fx:id="FamilyName22" GridPane.columnIndex="1" GridPane.columnSpan="6" GridPane.rowIndex="1" />
+            <Label text="C1" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="C2" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label text="C3" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label text="C4" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label text="C5" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label text="C6" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <TextField fx:id="g1cu122" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu122" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du122" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu222" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu222" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du222" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu322" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu322" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du322" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu422" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu422" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du422" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu522" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu522" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du522" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu622" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu622" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du622" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Label text="Gender" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <TextField fx:id="Name122" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+            <TextField fx:id="Gender122" editable="false" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+            <TextField editable="false" text="4" GridPane.columnIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </TextField>
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+
+        <GridPane fx:id="PARENT5" disable="true" focusTraversable="true" layoutX="270.0" layoutY="630.0" pickOnBounds="false" prefHeight="200.0" prefWidth="250.0">
+          <children>
+            <Label prefHeight="17.0" prefWidth="92.0" text="DNA GENETICS" GridPane.columnSpan="2147483647">
+              <font>
+                <Font name="System Bold" size="12.0" />
+              </font>
+            </Label>
+            <Label text="Family Name" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="94.0" text="Current UPP" GridPane.rowIndex="5">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="95.0" text="Genetic DNA" GridPane.rowIndex="6">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="95.0" text="DOM" GridPane.rowIndex="7">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label text="Parent5" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <TextField fx:id="FamilyName12" GridPane.columnIndex="1" GridPane.columnSpan="6" GridPane.rowIndex="1" />
+            <Label text="C1" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="C2" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label text="C3" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label text="C4" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label text="C5" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label text="C6" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <TextField fx:id="g1cu112" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu112" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du112" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu212" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu212" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du212" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu312" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu312" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du312" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu412" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu412" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du412" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu512" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu512" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du512" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu612" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu612" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du612" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Label text="Gender" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <TextField fx:id="Name112" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+            <TextField fx:id="Gender112" editable="false" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+            <TextField editable="false" text="5" GridPane.columnIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </TextField>
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+        <GridPane fx:id="PARENT6" disable="true" focusTraversable="true" layoutX="520.0" layoutY="630.0" pickOnBounds="false" prefHeight="195.0" prefWidth="250.0">
+          <children>
+            <Label prefHeight="17.0" prefWidth="92.0" text="DNA GENETICS" GridPane.columnSpan="2147483647">
+              <font>
+                <Font name="System Bold" size="12.0" />
+              </font>
+            </Label>
+            <Label text="Family Name" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="94.0" text="Current UPP" GridPane.rowIndex="5">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="95.0" text="Genetic DNA" GridPane.rowIndex="6">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="95.0" text="DOM" GridPane.rowIndex="7">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <Label text="Parent6" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <TextField fx:id="FamilyName23" GridPane.columnIndex="1" GridPane.columnSpan="6" GridPane.rowIndex="1" />
+            <Label text="C1" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="C2" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label text="C3" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label text="C4" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label text="C5" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label text="C6" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <TextField fx:id="g1cu123" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu123" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du123" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu223" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu223" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du223" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu323" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu323" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du323" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu423" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu423" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du423" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu523" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu523" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du523" editable="false" text="X" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <TextField fx:id="g1cu623" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <TextField fx:id="g1gu623" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <TextField fx:id="g1du623" editable="false" text="X" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Label text="Gender" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </Label>
+            <TextField fx:id="Name123" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+            <TextField fx:id="Gender123" editable="false" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+            <TextField editable="false" text="6" GridPane.columnIndex="2">
+              <font>
+                <Font name="System Italic" size="12.0" />
+              </font>
+            </TextField>
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="10.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+
+
+
+      </children>
+    </Pane>
+  </content>
+</ScrollPane>

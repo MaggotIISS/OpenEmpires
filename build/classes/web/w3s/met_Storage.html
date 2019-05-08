@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <!--  -->
+    <title>met_Storage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS layout -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- JavaScript library -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <a href="file:///C:/TED/Web/src/iiss/maggot/t5/web/AllLinks.html">AllLinks</a>
+    </div>
+    <hr/>
+    <div>
+      Storage Object<br/>
+      The Storage object of the Web Storage API provides access to the session storage or local storage for a particular domain. This allows you to for example add, modify or delete stored data items.<br/><br/>
+
+      Storage Object Properties<br/>
+      Property	Description<br/>
+      length	Returns the number of data items stored in the Storage object<br/>
+      Storage Object Methods<br/>
+      Method	Description<br/>
+      key(n)	Returns the name of the nth key in the storage<br/>
+      getItem(keyname)	Returns the value of the specified key name<br/>
+      setItem(keyname, value)	Adds that key to the storage, or update that key's value if it already exists<br/>
+      removeItem(keyname)	Removes that key from the storage<br/>
+      clear()	Empty all key out of the storage<br/>
+      Related Pages for Web Storage API<br/>
+      Method	Description<br/>
+      window.localStorage	Allows to save key/value pairs in a web browser. Stores the data with no expiration date
+      window.sessionStorage	Allows to save key/value pairs in a web browser. Stores the data for one session<br/>
+    </div>
+    <div>
+      <div id="result"></div>
+      <script>
+        // Check browser support
+        if (typeof (Storage) !== "undefined") {
+          // Store
+          //localStorage.setItem("lastname", "Smith");
+          // Retrieve
+          document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+        } else {
+          document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+        }
+      </script>
+    </div>
+    <div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Accordion fx:id="accordian" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.t5.T5Controller">
+  <panes>
+    <TitledPane fx:id="timePane" animated="false" expanded="true" text="Time">
+      <content>
+        <AnchorPane fx:id="timeAnchor" minHeight="100.0" minWidth="0.0" prefHeight="327.0" prefWidth="598.0">
+          <children>
+            <Pane fx:id="timepane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="175.0">
+              <children>
+                <MenuButton fx:id="timemenu" layoutX="0.0" layoutY="0.0" prefWidth="175.0" text="Time" />
+
+                <TextField fx:id="year" layoutY="75.0" onAction="#year" prefHeight="25" prefWidth="40" promptText="Year" />
+                <Label fx:id="l4yr" layoutX="45.0" layoutY="79.0" onMouseClicked="#randomClick" prefHeight="17.0" text="Year" />
+
+                <TextField fx:id="day" layoutY="25.0" onAction="#day" prefHeight="25" prefWidth="40" promptText="Day" />
+                <Label fx:id="l4day" layoutX="45.0" layoutY="31.0" onMouseClicked="#randomClick" prefHeight="17.0" text="Day" />
+
+                <TextField fx:id="hour" layoutX="80.0" layoutY="25" onAction="#hour" prefHeight="25" prefWidth="30.0" promptText="Hour" />
+                <Label fx:id="l4hr" layoutX="115.0" layoutY="31.0" onMouseClicked="#randomClick" prefHeight="17.0" text="Hour" />
+
+                <TextField fx:id="minute" layoutX="80.0" layoutY="50.0" onAction="#minute" prefHeight="25" prefWidth="30.0" promptText="Minute" />
+                <Label fx:id="l4min" layoutX="115.0" layoutY="54.0" onMouseClicked="#randomClick" prefHeight="17.0" text="Minute" />
+
+                <TextField fx:id="second" layoutX="80.0" layoutY="75.0" onAction="#second" prefHeight="25" prefWidth="30.0" promptText="Second" />
+                <Label fx:id="l4sec" layoutX="115.0" layoutY="79.0" onMouseClicked="#randomClick" prefHeight="17.0" text="Second" />
+
+                <TextField fx:id="textfield" alignment="CENTER" layoutX="0.0" layoutY="225.0" prefHeight="17.0" prefWidth="150.0" text="Label" />
+
+                <TextArea fx:id="textarea" layoutY="100.0" prefHeight="175.0" prefWidth="175.0" />
+
+                <Label fx:id="last" layoutX="1.0" layoutY="278.0" onMouseClicked="#lastClick" prefHeight="17.0" text="second" />
+                <Label fx:id="NUM" layoutX="147.0" layoutY="278.0" text="NUM" />
+              </children>
+            </Pane>
+          </children>
+          <rotationAxis>
+            <Point3D />
+          </rotationAxis>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="sectorPane" animated="false" text="Sector">
+      <content>
+        <AnchorPane fx:id="sectorAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+          <children>
+            <Pane>
+              <children>
+                <MenuButton fx:id="sectormenu" prefWidth="150.0" text="Sectors" />
+              </children>
+            </Pane>
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="subsectorPane" animated="false" text="Subsector">
+      <content>
+        <AnchorPane fx:id="subsectorAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+          <children>
+            <Pane layoutY="2.0">
+              <children>
+                <MenuButton fx:id="subsectormenu" prefWidth="150.0" text="Subsectors" />
+              </children>
+            </Pane>
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="systemPane" animated="false" text="System">
+      <content>
+        <AnchorPane fx:id="systemAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+          <children>
+            <Pane layoutY="2.0">
+              <children>
+                <MenuButton fx:id="systemmenu" prefWidth="150.0" text="Systems" />
+              </children>
+            </Pane>
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="starPane" animated="false" text="Star">
+      <content>
+        <AnchorPane fx:id="starAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+          <children>
+            <Pane layoutY="2.0">
+              <children>
+                <MenuButton fx:id="starmenu" prefWidth="150.0" text="Stars" />
+              </children>
+            </Pane>
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="counterPane" animated="false" text="Counter">
+      <content>
+        <AnchorPane fx:id="counterAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+          <children>
+            <Pane>
+              <children>
+                <MenuButton fx:id="countermenu" prefWidth="150.0" text="Counters" />
+              </children>
+            </Pane>
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="racePane" animated="false" text="Race">
+      <content>
+        <AnchorPane fx:id="alienAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+          <children>
+            <Pane>
+              <children>
+                <MenuButton fx:id="alienmenu" prefWidth="150.0" text="Races" />
+              </children>
+            </Pane>
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="graphicPane" animated="false" text="Graphic">
+      <content>
+        <AnchorPane fx:id="graphicAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+          <children>
+            <Pane>
+              <children>
+                <MenuButton fx:id="graphicmenu" prefWidth="150.0" text="Graphics" />
+              </children>
+            </Pane>
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="controlPane" animated="false" text="Control">
+      <content>
+        <AnchorPane fx:id="controlAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+          <children>
+            <Pane>
+              <children>
+                <MenuButton fx:id="controlmenu" prefWidth="150.0" text="Controls" />
+              </children>
+            </Pane>
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+  </panes>
+</Accordion>

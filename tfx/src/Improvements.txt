@@ -1,0 +1,14 @@
+Panel4T5Locator:
+  split into multiple files
+  align system map with data
+  add underlings to counter creation according to rank.
+
+Panel4T5Scripting:
+  Redo example files to re-load as needed (Sec,Sub,Sys,Route)
+  Multi world HTML file should be color encoded to TAS of individual line
+
+Panel4T5CounterMaker:
+  place gifs at co-ords like bills cyberboard utilities
+
+Panel4T5TableView:
+  get column shift working

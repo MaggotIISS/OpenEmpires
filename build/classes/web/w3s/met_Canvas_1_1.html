@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Sector View</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  </head>
+  <body>
+    <div>
+      <p>Sector:Vland</p>
+
+      <img id="Vland" width="220" height="277"
+           src="file:///C:\T5\Vland\P Kakadan\2737 Kesali\2737 Kesali\Vland Sector.gif" alt="Duke of Kesali">
+
+      <p>Canvas:</p>
+
+      <canvas id="SubSectorPic" width="240" height="297"
+              style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.
+      </canvas>
+
+      <script>
+        window.onload = function () {
+          var canvas = document.getElementById("SubSectorPic");
+          var ctx = canvas.getContext("2d");
+          var img = document.getElementById("Vland");
+          ctx.drawImage(img, 10, 10);
+        };
+      </script>
+
+
+    </div>
+  </body>
+</html>

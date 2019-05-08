@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tas SYSTEM "T5Elements.dtd">
+<!-- Travellers Aid Society Standards -->
+<tas>
+  <!-- Stellar Star System details-->
+  <system>SYSTEM
+    <!-- Place in Sector-->
+    <hex>Hex</hex>
+    <!-- Name commonly used in off-world dealing -->
+    <name>Name</name>
+    <!-- Universal World Profile -->
+    <uwp>UWP</uwp>
+    <!-- Trade details -->
+    <remarks>Remarks</remarks>
+    <!-- Importance -->
+    <ix>Ix</ix>
+    <!-- Economic -->
+    <ex>Ex</ex>
+    <!-- Cultural -->
+    <cx>Cx</cx>
+    <!-- Naval Bases-->
+    <n>N</n>
+    <!-- Other Bases-->
+    <b>B</b>
+    <!-- Travel zone -->
+    <z>Z</z>
+    <!-- Population, Belts, Gas Giants-->
+    <pbg>PBG</pbg>
+    <!-- Worlds in system -->
+    <w>W</w>
+    <!-- Allegiance -->
+    <a>A</a>
+    <!-- Stellar details-->
+    <stellar>Stellar</stellar>
+  </system>
+  <!-- Subsector details-->
+  <subsector>Subsector
+    <!-- Letter (A-P) -->
+    <letter>Letter</letter>
+    <!-- Name of Subsector -->
+    <name>Name</name>
+    <!-- Number of world in system-->
+    <worlds>Worlds</worlds>
+  </subsector>
+  <!-- Sector details-->
+  <sector>Sector
+    <!-- From Core sector -->
+    <x>X</x>
+    <!-- From Core sector -->
+    <y>Y</y>
+    <!-- Vilani name-->
+    <name>Name</name>
+    <!-- Which Archduke? -->
+    <domain>Domain</domain>
+  </sector>
+  <!-- -->
+  <size>SIZE
+    <unit>Unit</unit>
+    <!-- width -->
+    <x>X</x>
+    <!-- height -->
+    <y>Y</y>
+    <!-- depth -->
+    <z>Z</z>
+    <!-- -->
+    <unit>Unit</unit>
+  </size>
+  <!-- -->
+  <mass>MASS
+    <!-- Standard of measurement-->
+    <unit>Unit</unit>
+    <!-- mass at 1G -->
+    <weight>Weight</weight>
+  </mass>
+  <!-- How is time recorded?-->
+  <stardate>STARDATE
+    <!-- -->
+    <unit>Unit</unit>
+    <!-- Differs with race-->
+    <year>Year</year>
+    <!-- 365 in Vilani year-->
+    <day>Day</day>
+    <!-- 24 in 1 day-->
+    <hour>Hour</hour>
+    <!-- 60 in 1 hour-->
+    <minute>Minute</minute>
+    <!-- 60 in 1 minute-->
+    <second>Second</second>
+    <!-- 1000 in 1 second-->
+    <mil>Mil</mil>
+  </stardate>
+  <!-- various uses, standard for star system orbital detail -->
+  <orbit>ORBIT
+    <!-- distance name-->
+    <unit>Unit</unit>
+    <!-- num * unit = distance-->
+    <num>Num</num>
+    <!-- Stellar, or other uses-->
+    <type>Type</type>
+  </orbit>
+  <!-- Central pivot point -->
+  <star>STAR
+    <!-- Primary, Secondary, Tertiary, Quaternary-->
+    <unit>Unit</unit>
+    <!-- O,B,A,F,G,K,M -->
+    <col>Col</col>
+    <!-- 0-9 -->
+    <size>Size</size>
+    <!-- I-VII -->
+    <type>Type</type>
+    <!-- col,size,type.  Size must be smaller-->
+    <companion>Companion</companion>
+  </star>
+  <!-- -->
+  <gasgiant>GAS GIANT
+    <!-- large, small, brown dwarf,ice -->
+    <unit>Unit</unit>
+    <!-- See T5 page ?-->
+    <size>Size</size>
+    <!-- See T5 page ?-->
+    <wsize>WSize</wsize>
+    <!-- See T5 page ?-->
+    <dia>Dia</dia>
+  </gasgiant>
+  <!-- -->
+  <planet>PLANET
+    <!-- Commonly used name offworld-->
+    <name>Name</name>
+    <!-- Universal World Profile-->
+    <uwp>UWP</uwp>
+    <!-- ??? -->
+    <orbitdata>OrbitData</orbitdata>
+  </planet>
+  <!-- -->
+  <moon>MOON
+    <!-- Name used on maps -->
+    <name>Name</name>
+    <!-- Universal World Profile -->
+    <uwp>UWP</uwp>
+    <!-- Orbit number and details -->
+    <orbit>Orbit</orbit>
+  </moon>
+  <!-- Person, Item, Place etc. -->
+  <name>NAME
+    <!-- Beginning -->
+    <first>First</first>
+    <!-- Center -->
+    <middle>Middle</middle>
+    <!-- Ending-->
+    <last>Last</last>
+    <!-- ??? -->
+    <id>ID</id>
+  </name>
+  <!-- Universal Personality Profile-->
+  <upp>UPP
+    <!-- Strength -->
+    <str>STR</str>
+    <!-- Dexterity -->
+    <dex>DEX</dex>
+    <!-- Endurance -->
+    <end>END</end>
+    <!-- Intelligence -->
+    <int>INT</int>
+    <!-- Education -->
+    <edu>EDU</edu>
+    <!-- Social Standing-->
+    <soc>SOC</soc>
+  </upp>
+  <!-- -->
+  <info>INFO
+    <!-- Job -->
+    <career>Career</career>
+    <!-- Length -->
+    <terms>Terms</terms>
+  </info>
+  <!-- -->
+  <npc>NPC
+    <!-- First only-->
+    <name>Name</name>
+    <!-- Universal Personality Profile -->
+    <upp>UPP</upp>
+    <!-- Background and extras -->
+    <info>Info</info>
+  </npc>
+  <id>ID
+    <sec>Sector</sec>
+    <sub>Subsector</sub>
+    <sys>System</sys>
+    <orbit>Orbit</orbit>
+    <country>Country</country>
+    <commdot>Commdot</commdot>
+    <email>Email</email>
+    <phone>Phone</phone>
+    <name>Name</name>
+  </id>
+  <crew>Crew
+    <id>ID</id>
+    <rank>Rank</rank>
+    <position>Position</position>
+  </crew>
+  <table>Table
+    <x>X</x>
+    <y>Y</y>
+    <title>Title</title>
+    <type>Type</type>
+  </table>
+
+  <W7>
+    <Who></Who>
+    <What></What>
+    <Why></Why>
+    <Where></Where>
+    <When></When>
+    <With></With>
+    <Which></Which>
+  </W7>
+</tas>

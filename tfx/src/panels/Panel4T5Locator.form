@@ -1,0 +1,1640 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="X"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Y"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jta4Sec">
+      <Properties>
+        <Property name="columns" type="int" value="15"/>
+        <Property name="rows" type="int" value="5"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jta4SecMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jta4Line">
+      <Properties>
+        <Property name="columns" type="int" value="15"/>
+        <Property name="rows" type="int" value="5"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jta4Sys">
+      <Properties>
+        <Property name="columns" type="int" value="15"/>
+        <Property name="rows" type="int" value="5"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jta4Info">
+      <Properties>
+        <Property name="columns" type="int" value="15"/>
+        <Property name="rows" type="int" value="5"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="10"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jta4Near">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="rows" type="int" value="5"/>
+        <Property name="tabSize" type="int" value="5"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jta4Orb">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="rows" type="int" value="5"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jta4OrbMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jta4Dest">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="rows" type="int" value="5"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jta4Str">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="rows" type="int" value="5"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jta4HTML">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="rows" type="int" value="5"/>
+        <Property name="text" type="java.lang.String" value="&lt;!DOCTYPE html&gt;&#xa;&lt;html&gt;&#xa;  &lt;head&gt;&#xa;    &lt;title&gt;TITLE&lt;/title&gt;&#xa;    &lt;meta charset=&quot;UTF-8&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;&#xa;  &lt;/head&gt;&#xa;  &lt;body&gt;&#xa;&#xa;&lt;br&gt;&#xa;atlas&lt;br&gt;&#xa;candy&lt;br&gt;&#xa;poster&lt;br&gt;&#xa;print&lt;br&gt;&#xa;&lt;br&gt;&#xa;&lt;a href=&quot;http://www.travellermap.com/?x=-98&amp;y=73&amp;scale=100&amp;options=0&amp;style=atlas&quot;&gt;&#xa;http://www.travellermap.com/?x=-98&amp;y=73&amp;scale=100&amp;options=0&amp;style=atlas&lt;br&gt;&#xa;&lt;br&gt;&#xa;&lt;br&gt;&#xa;&#xa;&lt;iframe&#xa;src=&quot;http://travellermap.com/iframe.htm?sector=SEC&amp;hex=HEX&quot;&#xa;style=&quot;width: WID; height: HGT; border: BORDER;&quot;&gt;&#xa;&lt;/iframe&gt;&#xa;&#xa;&lt;br&gt;&#xa;&lt;img src=&quot;http://www.travellermap.com/?x=-98&amp;y=73&amp;scale=80&amp;options=0&amp;style=atlas&quot;&gt;&#xa;&lt;br&gt;&#xa;&#xa;&lt;img src=&quot;http://travellermap.com/api/jumpmap?sector=SEC&amp;hex=HEX&amp;jump=JUMP&amp;scale=SCALE&amp;options=OPTIONS&amp;style=atlas&quot;&gt;&#xa;&lt;br&gt;&#xa;&#xa;&lt;img src=&quot;http://travellermap.com/api/jumpmap?sector=SEC&amp;hex=HEX&amp;jump=JUMP&amp;scale=SCALE&amp;options=OPTIONS&amp;style=candy&quot;&gt;&#xa;&lt;br&gt;&#xa;&#xa;&lt;img src=&quot;http://travellermap.com/api/jumpmap?sector=SEC&amp;hex=HEX&amp;jump=JUMP&amp;scale=SCALE&amp;options=OPTIONS&amp;style=poster&quot;&gt;&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;&lt;img src=&quot;http://travellermap.com/api/jumpmap?sector=SEC&amp;hex=HEX&amp;jump=JUMP&amp;scale=SCALE&amp;options=OPTIONS&amp;style=print&quot;&gt;&#xa;&lt;img src=&quot;http://travellermap.com/api/jumpmap?sector=SEC&amp;hex=HEX&amp;jump=JUMP&amp;scale=SCALE&amp;options=OPTIONS&amp;style=STYLE&quot;&gt;&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://www.travellermap.com/world?sector=SEC&amp;hex=HEX&quot;&gt;&#xa;http://www.travellermap.com/world?sector=SEC&amp;hex=HEX&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/poster?sector=SPIN&amp;scale=SCALE&amp;options=OPTIONS&amp;style=STYLE&quot;&gt;&#xa;http://travellermap.com/api/poster?sector=SPIN&amp;scale=SCALE&amp;options=OPTIONS&amp;style=STYLE&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/A/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/A/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/B/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/B/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/C/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/C/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/D/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/D/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/E/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/E/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/F/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/F/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/G/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/G/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/H/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/H/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/I/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/I/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/J/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/J/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/K/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/K/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/L/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/L/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/M/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/M/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/N/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/N/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/O/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/O/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/P/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/P/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/coordinates?sx=SX&amp;sy=SY&quot;&gt;&#xa;http://travellermap.com/api/coordinates?sx=SX&amp;sy=SY&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/coordinates?sx=SX&amp;sy=SY&amp;hx=HX&amp;hy=HY&quot;&gt;&#xa;http://travellermap.com/api/coordinates?sx=SX&amp;sy=SY&amp;hx=HX&amp;hy=HY&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/coordinates?sector=SEC&amp;hex=HEX&quot;&gt;&#xa;http://travellermap.com/api/coordinates?sector=SEC&amp;hex=HEX&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/coordinates?sector=SEC&quot;&gt;&#xa;http://travellermap.com/api/coordinates?sector=SEC&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/credits?sector=SEC&amp;scale=SCALE&amp;options=OPTIONS &amp;style=STYLE&quot;&gt;&#xa;http://travellermap.com/api/credits?sector=SEC&amp;scale=SCALE&amp;options=OPTIONS &amp;style=STYLE&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/credits?sector=SEC&amp;hex=HEX&quot;&gt;&#xa;http://travellermap.com/api/credits?sector=SEC&amp;hex=HEX&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/credits?sx=SX&amp;sy=SY&quot;&gt;&#xa;http://travellermap.com/api/credits?sx=SX&amp;sy=SY&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/credits?sx=SX&amp;sy=SY&amp;hx=HX&amp;hy=HY&quot;&gt;&#xa;http://travellermap.com/api/credits?sx=SX&amp;sy=SY&amp;hx=HX&amp;hy=HY&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/credits?x=X&amp;y=Y&quot;&gt;&#xa;http://travellermap.com/api/credits?x=X&amp;y=Y&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://www.travellermap.com/api/credits?x=-110&amp;y=-70&quot;&gt;&#xa;http://www.travellermap.com/api/credits?x=-110&amp;y=-70&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/sec?sector=SEC&quot;&gt;&#xa;http://travellermap.com/api/sec?sector=SEC&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/sec?sector=SEC&amp;hex=HEX&quot;&gt;&#xa;http://travellermap.com/api/sec?sector=SEC&amp;hex=HEX&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/sec?sx=SX&amp;sy=SY&quot;&gt;&#xa;http://travellermap.com/api/sec?sx=SX&amp;sy=SY&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/metadata?sector=SEC&quot;&gt;&#xa;http://travellermap.com/api/metadata?sector=SEC&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/metadata?sx=SX&amp;sy=SY&quot;&gt;&#xa;http://travellermap.com/api/metadata?sx=SX&amp;sy=SY&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://www.travellermap.com/api/metadata?sector=SEC&quot;&gt;&#xa;http://www.travellermap.com/api/metadata?sector=SEC&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://www.travellermap.com/api/msec?sector=SEC&quot;&gt;&#xa;http://www.travellermap.com/api/msec?sector=SEC&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://www.travellermap.com/api/universe?era=ERA&quot;&gt;&#xa;http://www.travellermap.com/api/universe?era=ERA&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://www.travellermap.com/api/tile?x=-24.5&amp;y=Y8&amp;scale=SCALE&amp;options=OPTIONS &amp;style=STYLE&quot;&gt;&#xa;http://www.travellermap.com/api/tile?x=-24.5&amp;y=Y8&amp;scale=SCALE&amp;options=OPTIONS &amp;style=STYLE&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/poster?sector=SEC&quot;&gt;&#xa;http://travellermap.com/api/poster?sector=SEC&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/poster?sector=SEC&quot;&gt;&#xa;http://travellermap.com/api/poster?sector=SEC&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/jumpmap?x=X&amp;y=Y&quot;&gt;&#xa;http://travellermap.com/api/jumpmap?x=X&amp;y=Y&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/jumpmap?sx=SX&amp;-1=sy&amp;hx=HX&amp;hy=HY&quot;&gt;&#xa;http://travellermap.com/api/jumpmap?sx=SX&amp;-1=sy&amp;hx=HX&amp;hy=HY&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/jumpmap?sector=SEC&amp;hex=HEX&quot;&gt;&#xa;http://travellermap.com/api/jumpmap?sector=SEC&amp;hex=HEX&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/msec?sector=SEC&quot;&gt;&#xa;http://travellermap.com/api/msec?sector=SEC&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/msec?sx=SX&amp;sy=SY&quot;&gt;&#xa;http://travellermap.com/api/msec?sx=SX&amp;sy=SY&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/jumpworlds?x=X&amp;y=Y&quot;&gt;&#xa;http://travellermap.com/api/jumpworlds?x=X&amp;y=Y&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/jumpworlds?sx=SX&amp;sy=SY&amp;hx=HX&amp;hy=HY&quot;&gt;&#xa;http://travellermap.com/api/jumpworlds?sx=SX&amp;sy=SY&amp;hx=HX&amp;hy=HY&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/jumpworlds?sector=SEC&#xa;&amp;hex=HEX&quot;&gt;http://travellermap.com/api/jumpworlds?sector=SEC&amp;hex=HEX&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/search?q=NAME&quot;&gt;&#xa;http://travellermap.com/api/search?q=NAME&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/api/universe&quot;&gt;&#xa;http://travellermap.com/api/universe&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://www.travellermap.com/api/coordinates?sector=SEC&amp;hex=HEX&quot;&gt;&#xa;http://www.travellermap.com/api/coordinates?sector=SEC&amp;hex=HEX&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data&quot;&gt;&#xa;http://travellermap.com/data&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC&quot;&gt;&#xa;http://travellermap.com/data/SEC&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/tab&quot;&gt;&#xa;http://travellermap.com/data/SEC/tab&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/sec&quot;&gt;&#xa;http://travellermap.com/data/SEC/sec&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/metadata&quot;&gt;&#xa;http://travellermap.com/data/SEC/metadata&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/msec&quot;&gt;&#xa;http://travellermap.com/data/SEC/msec&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/coordinates&quot;&gt;&#xa;http://travellermap.com/data/SEC/coordinates&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/credits&quot;&gt;&#xa;http://travellermap.com/data/SEC/credits&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/A&quot;&gt;&#xa;http://travellermap.com/data/SEC/A&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/B&quot;&gt;&#xa;http://travellermap.com/data/SEC/B&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/C&quot;&gt;&#xa;http://travellermap.com/data/SEC/C&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/D&quot;&gt;&#xa;http://travellermap.com/data/SEC/D&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/E&quot;&gt;&#xa;http://travellermap.com/data/SEC/E&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/F&quot;&gt;&#xa;http://travellermap.com/data/SEC/F&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/G&quot;&gt;&#xa;http://travellermap.com/data/SEC/G&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/H&quot;&gt;&#xa;http://travellermap.com/data/SEC/H&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/I&quot;&gt;&#xa;http://travellermap.com/data/SEC/I&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/J&quot;&gt;&#xa;http://travellermap.com/data/SEC/J&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/K&quot;&gt;&#xa;http://travellermap.com/data/SEC/K&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/L&quot;&gt;&#xa;http://travellermap.com/data/SEC/L&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/M&quot;&gt;&#xa;http://travellermap.com/data/SEC/M&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/N&quot;&gt;&#xa;http://travellermap.com/data/SEC/N&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/O&quot;&gt;&#xa;http://travellermap.com/data/SEC/O&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/P&quot;&gt;&#xa;http://travellermap.com/data/SEC/P&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/C/tab&quot;&gt;&#xa;http://travellermap.com/data/SEC/C/tab&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/C/sec&quot;&gt;&#xa;http://travellermap.com/data/SEC/C/sec&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/C/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/C/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/HEX/coordinates&quot;&gt;&#xa;http://travellermap.com/data/SEC/HEX/coordinates&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/HEX/credits&quot;&gt;&#xa;http://travellermap.com/data/SEC/HEX/credits&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/HEX/jump/9&quot;&gt;&#xa;http://travellermap.com/data/SEC/HEX/jump/9&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/HEX/jump/9/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/HEX/jump/9/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/coordinates&quot;&gt;&#xa;http://travellermap.com/data/SEC/coordinates&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/HEX/coordinates&quot;&gt;&#xa;http://travellermap.com/data/SEC/HEX/coordinates&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/credits&quot;&gt;&#xa;http://travellermap.com/data/SEC/credits&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/HEX/credits&quot;&gt;&#xa;http://travellermap.com/data/SEC/HEX/credits&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC&quot;&gt;&#xa;http://travellermap.com/data/SEC&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/sec&quot;&gt;&#xa;http://travellermap.com/data/SEC/sec&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/tab&quot;&gt;&#xa;http://travellermap.com/data/SEC/tab&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/C&quot;&gt;&#xa;http://travellermap.com/data/SEC/C&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/C/sec&quot;&gt;&#xa;http://travellermap.com/data/SEC/C/sec&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/C/tab&quot;&gt;&#xa;http://travellermap.com/data/SEC/C/tab&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/metadata&quot;&gt;&#xa;http://travellermap.com/data/SEC/metadata&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/msec&quot;&gt;&#xa;http://travellermap.com/data/SEC/msec&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/HEX/jump/9&quot;&gt;&#xa;http://travellermap.com/data/SEC/HEX/jump/9&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data/SEC/HEX/jump/9/image&quot;&gt;&#xa;http://travellermap.com/data/SEC/HEX/jump/9/image&#xa;&lt;br&gt;&#xa;&#xa;&lt;a href=&quot;http://travellermap.com/data&quot;&gt;&#xa;http://travellermap.com/data&#xa;&lt;/a href&gt;&#xa;&lt;br&gt;&#xa;&lt;br&gt;&#xa;&lt;br&gt;&#xa;&lt;br&gt;&#xa;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jta4Sectors">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="rows" type="int" value="5"/>
+        <Property name="text" type="java.lang.String" value="A&apos;yosea&#xa;Ablaz&#xa;Abresh&#xa;Aed&#xa;Afawahisa&#xa;Afdranz&#xa;Aftailr&#xa;Ahkiweahi&apos;&#xa;Aktifao&#xa;Aldebaran&#xa;Alpha Crucis&#xa;Amderstun&#xa;Amdukan&#xa;Angfutsag&#xa;Anshnzhins&#xa;Antares&#xa;Antsrish&#xa;Aphlent&#xa;Aplie&#xa;Astron&#xa;Ataurre&#xa;Avereguar&#xa;Aviel&#xa;Azaz&#xa;Azhpliabl&#xa;Banners&#xa;Bar&apos;kakr&#xa;Biaqrpraze&#xa;Blaskon&#xa;Bleblqansh&#xa;Bliaazh&#xa;Bliardlie&#xa;Bliatsiebl&#xa;Brelia&#xa;Brianch&#xa;Brieplanz&#xa;Canopus&#xa;Centrax&#xa;Chetliashal&#xa;Chiajavlazh&#xa;Chiep Zhez&#xa;Chit Botshti&#xa;Chtatiate&#xa;Chtetaravl&#xa;Chtierabl&#xa;Chtijashal&#xa;Core&#xa;Corridor&#xa;Crucis Margin&#xa;Dagudashaag&#xa;Daibei&#xa;Dalchie Jdatl&#xa;Dark Nebula&#xa;Darret&#xa;Datsatl&#xa;Delphi&#xa;Deneb&#xa;Dfotseth&#xa;Dhuerorrg&#xa;Diaspora&#xa;Difralfler&#xa;Dlavvreplents&#xa;Dliaprqriez&#xa;Dliea&#xa;Dliebriatia&#xa;Doklzots&#xa;Drachabre&#xa;Drakken&#xa;Driaflfiazlats&#xa;Driasera&#xa;Driebliepl&#xa;Drierii&#xa;Driklfetvipr&#xa;Eahyaw&#xa;Ealiyasiyw&#xa;Eble&#xa;Eblia&#xa;Ee&#xa;Eekrookrigz&#xa;Eiaplial&#xa;Eie&#xa;Ekrbriansh&#xa;Elyetleisiyea&#xa;Empty Quarter&#xa;Enchakl&#xa;Eose&apos;o&#xa;Esai&apos;yo&#xa;Etakhasoa&#xa;Etlnchofr&#xa;Evred&#xa;Extolian&#xa;Extremus&#xa;Ezhebl&#xa;Fa Dzaets&#xa;Fahreahluis&#xa;Faoheiroi&apos;iyhao&#xa;Far Frontiers&#xa;Favkranish&#xa;Febiaiadl&#xa;Feflolents&#xa;Fiaftashe&#xa;Finggvakhou&#xa;Flablenti&#xa;Flaflzhevrients&#xa;Folgore&#xa;Foreven&#xa;Fornast&#xa;Frajbriekrensh&#xa;Fraklbizh&#xa;Fretvlobrpriet&#xa;Frizhkladlncha&#xa;Ftaoiyekyu&#xa;Ftyer&#xa;Fulani&#xa;Gashikan&#xa;Gateway&#xa;Genfert&#xa;Gh!hken&#xa;Ghoekhnael&#xa;Glimmerdrift Reaches&#xa;Gn&apos;hk&apos;r&#xa;Gnaa Iimb&apos;kr&#xa;Grikr!ng&#xa;Gur&#xa;Gushemege&#xa;Gvurrdon&#xa;Gzaefueg&#xa;Gzektixk&#xa;Gzirr!k&apos;l&#xa;Hadji&#xa;Hanstone&#xa;Harbinger&#xa;Harea&#xa;Heakhafaw&#xa;Hfiywitir&#xa;Hinterworlds&#xa;Hkakhaeaw&#xa;Hlakhoi&#xa;Holowon&#xa;Ia&#xa;Ianse&#xa;Ianshaplzdier&#xa;Iate&#xa;Ichnzhipr&#xa;Idekl&#xa;Iebtladl&#xa;Iekrqre&#xa;Ienjaz&#xa;Ienza&#xa;Ieviash&#xa;Ijar&#xa;Ijidl&#xa;Ilelish&#xa;Ingukrax&#xa;Inshzish&#xa;Iphigenaia&#xa;Irlaftalea&#xa;Irugangog&#xa;Itsfiebl&#xa;Itvikiastaf&#xa;Iwahfuah&#xa;Jdeblinsiqr&#xa;Jdencheplia&#xa;Jdibrirvianj&#xa;Jdodiafldla&#xa;Jiechnzhitsonj&#xa;K&apos;trekreer&#xa;Kaa G!&apos;kul&#xa;Karleaya&#xa;Katoonah&#xa;Kazhekliepr&#xa;Kefiykhta&#xa;Kepridlnchots&#xa;Kernzhez&apos;a&#xa;Kfazz Ghik&#xa;Khaeaw&#xa;Kharrthon&#xa;Khoellighz&#xa;Khuaryakh&#xa;Kiafldliezhjol&#xa;Kidunal&#xa;Kilong&#xa;Klajipl&#xa;Kliadli&#xa;Knaeleng&#xa;Kolire&#xa;Koog&#xa;Kozhdanzhinz&#xa;Kring Noor&#xa;Ksinanirz&#xa;Kteex!&#xa;Ktiin&apos;gzat&#xa;Lancask&#xa;Langere&#xa;Legend&#xa;Leonidae&#xa;Ley Sector&#xa;Lishun&#xa;Listanaya&#xa;Loplia&#xa;Lorspane&#xa;Lotsar&#xa;Luretiir!girr&#xa;Magyar&#xa;Malorn&#xa;Massilia&#xa;Mavuzog&#xa;Mbil!!gh&#xa;Mendan&#xa;Meshan&#xa;Mighabohk&#xa;Mikhail&#xa;Muarne&#xa;Mugheen&apos;t&#xa;N!!krumbiix&#xa;Nadir&#xa;Nchadla&#xa;Nchefrij&#xa;Nevlieri&#xa;Neworld&#xa;Nezhatliebr&#xa;Ngathksirz&#xa;Niabrefvronz&#xa;Nialkridla&#xa;Niechnchialbli&#xa;Nili&#xa;Nooq&#xa;Nseianzh&#xa;Nshofref&#xa;Ntetszif&#xa;Nuughe&#xa;Nzhajdibr&#xa;Nzhenzie&#xa;Nzhernzhi&#xa;Nzhiaapl&#xa;Nzievi&#xa;Oeghz Vaerrghr&#xa;Ohieraoi&#xa;Oiah&#xa;Old Expanses&#xa;Peklprozqratl&#xa;Phlange&#xa;Phlask&#xa;Pivchavia&#xa;Plablshashchesh&#xa;Pliabriebl&#xa;Pliajenzh&#xa;Pliantiblbra&#xa;Ploblvla&#xa;Plontarbli&#xa;Pofdriblnchitl&#xa;Porlock&#xa;Praklfrintsniadl&#xa;Pranzaklbraz&#xa;Prashtsintsanch&#xa;Preiel&#xa;Prinjobliedl&#xa;Proanz&#xa;Provence&#xa;Qlivinchezh&#xa;Qrecha&#xa;Qrefrnzhariefl&#xa;Raakaan&#xa;Ravrazhe&#xa;Reaver&apos;s Deep&#xa;Reft Sector&#xa;Rfigh&#xa;Riadrazh&#xa;Riafrtafrpriafr&#xa;Ricenden&#xa;Riekllezha&#xa;Riftspan Reaches&#xa;RimReach&#xa;Ruupiin&#xa;Rzakki&#xa;Savria&#xa;Setjefrshiatl&#xa;Shenzhtsenzh&#xa;Sheqraflal&#xa;Shiadldriadash&#xa;Shiazhanche&#xa;Shiblbropli&#xa;Siantsaia&#xa;Sidiadl&#xa;Sieriatsklinzh&#xa;Solomani Rim&#xa;Spangele&#xa;Spica&#xa;Spinward Marches&#xa;Sporelex&#xa;Staihaia&apos;yo&#xa;Star&apos;s End&#xa;Stiaklentsiefl&#xa;Stiatlchepr&#xa;Stienzarikl&#xa;Stinj Tianz&#xa;Storr&#xa;Stotsshiflezh&#xa;Tahahroal&#xa;Tar&apos;G&apos;kell&apos;p&#xa;Tatlnjaie&#xa;Tavrbovliepl&#xa;Teahloarifu&#xa;Tenshlatsvo&#xa;Tensk&#xa;The Beyond&#xa;Theron&#xa;Theta Borealis&#xa;Tienspevnekr&#xa;Tlabraplzhied&#xa;Tlapltsia&apos;o&#xa;Tledrbreplebr&#xa;Tlensbladrzhianzh&#xa;Tlialiedla&#xa;Tliblnzheflets&#xa;Tlinchjiee&#xa;Tlyasea&#xa;Touchstone&#xa;Tracerie&#xa;Treece&#xa;Trenchans&#xa;Trojan Reach&#xa;Tsadra&#xa;Tsadra Davr&#xa;Tsafrnchia&#xa;Tsebntsiatldlants&#xa;Tselidl&#xa;Tuglikki&#xa;Uistilrao&#xa;Ukaarriit!!b&#xa;Un&apos;k!!k&apos;ng&#xa;Usoirarloiau&#xa;Ustral Quadrant&#xa;Uuk&#xa;Uytal&#xa;Vanguard Reaches&#xa;Vedrabr&#xa;Veg Fergakh&#xa;Verge&#xa;Viajlefliez&#xa;Viashchieshiadl&#xa;Vietrienzhits&#xa;Vikrvidrvria&#xa;Vland&#xa;Vlofrkla&#xa;Voblezitl&#xa;Vravrzha&#xa;Waroatahe&#xa;Windhorn&#xa;Wrence&#xa;Wrenton&#xa;X&apos;kug&#xa;Xaagr&#xa;Xeeleer&#xa;Yahehwe&#xa;Yejiariebr&#xa;Yiklerzdanzh&#xa;Yikvrior&#xa;Zabrziklezh&#xa;Zao Kfeng Ig Grilokh&#xa;Zarushagar&#xa;Zdafeflzadr&#xa;Zdechrebrvle&#xa;Zdiedeiant&#xa;Zdielbeppria&#xa;Zdienzfiaia&#xa;Zdietablie&#xa;Ze&apos;shavrav&#xa;Zentse&#xa;Zenzhej&#xa;Zhechinje&#xa;Zhejnzhiikl&#xa;Zhenzhbrivtlo&#xa;Zhetsefr&#xa;Zhevreklnchi&#xa;Zhiaqrqiats&#xa;Zhiatienjiaz&#xa;Zhiejqrinzho&#xa;Zhiensh&#xa;Zhodane&#xa;Ziafrplians&#xa;Zietsebl&#xa;Zietssha&#xa;Zii&#xa;Zortakh&#xa;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jta4UWP">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="rows" type="int" value="5"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="panel4T5World">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="58" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="54" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+    <Component class="javax.swing.JTextArea" name="jta4Bases">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="rows" type="int" value="5"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="panel4WorldPic">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[100, 100]"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="panel4WorldPicMouseClicked"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="8"/>
+      </AuxValues>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+    <Component class="javax.swing.JTextArea" name="jta4Sub">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="rows" type="int" value="5"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="0" green="0" red="0" type="rgb"/>
+    </Property>
+    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="panel4Pic" alignment="0" min="-2" pref="208" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="panel4Strength" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="panel4T5PBG" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jcb4Sec" linkSize="26" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
+                  <Component id="panel4Jump" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="js4Dist" alignment="0" min="-2" pref="202" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                      <Component id="jLabel4" alignment="1" min="-2" pref="200" max="-2" attributes="0"/>
+                      <Component id="panel4Sec" linkSize="26" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jsp4Jump" alignment="0" pref="196" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jcb4Sub" linkSize="26" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jcb4Options" min="-2" pref="87" max="-2" attributes="0"/>
+                          <Component id="jcb4All" min="-2" pref="87" max="-2" attributes="0"/>
+                          <Component id="jComboBox2" alignment="1" min="-2" pref="87" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jComboBox1" linkSize="30" pref="71" max="32767" attributes="0"/>
+                                  <Component id="jtf4UWP" linkSize="30" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                              <Component id="jtf4Find" min="-2" pref="40" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="label1" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jcb4Rank" linkSize="33" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
+                          <Component id="jcb4Career" linkSize="33" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
+                          <Component id="jcb4Lang" linkSize="33" alignment="0" min="-2" pref="99" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="js4Terms" pref="36" max="32767" attributes="0"/>
+                          <Component id="jButton2" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jtf4UPP" alignment="0" min="-2" pref="62" max="-2" attributes="0"/>
+                          <Component id="Sex" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="jsp4All" alignment="0" min="-2" pref="402" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="200" max="-2" attributes="0"/>
+                          <Component id="jcb4Sys" min="-2" pref="203" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jButton1" alignment="1" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="panel4Sub" linkSize="26" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="panel4Sys" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
+                                  <Component id="jtf4Word" min="-2" pref="98" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jcb4Star" pref="617" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" pref="617" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Component id="jcb4Sec" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="255" pref="255" max="-2" attributes="0"/>
+                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="panel4Strength" min="-2" max="-2" attributes="0"/>
+                          <Component id="panel4T5PBG" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="panel4Sec" linkSize="31" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jcb4Options" linkSize="13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                      <Component id="jtf4UWP" linkSize="13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jButton1" linkSize="28" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                      <Component id="jcb4Lang" linkSize="13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jtf4Word" linkSize="13" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jcb4All" linkSize="13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                      <Component id="jtf4Find" linkSize="28" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                      <Component id="jcb4Career" linkSize="13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="js4Terms" linkSize="13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jtf4UPP" linkSize="13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jComboBox1" linkSize="28" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="panel4Sub" linkSize="31" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="jComboBox2" linkSize="13" alignment="2" max="32767" attributes="0"/>
+                          <Component id="jButton3" linkSize="13" alignment="2" pref="0" max="32767" attributes="0"/>
+                          <Component id="label1" linkSize="13" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="jcb4Rank" linkSize="13" alignment="2" max="32767" attributes="0"/>
+                          <Component id="jButton2" linkSize="13" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="Sex" linkSize="13" alignment="2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="panel4Pic" min="-2" pref="99" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="panel4Jump" min="-2" pref="39" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="js4Dist" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Component id="jsp4Jump" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="jsp4All" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jcb4Star" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jcb4Sub" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jcb4Sys" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane1" min="-2" pref="815" max="-2" attributes="0"/>
+                  <Component id="panel4Sys" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JComboBox" name="jcb4Sec">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="0"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="Double Click to Download"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jcb4SecMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcb4SecActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value=""/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jcb4Sub">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="0"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="Double click to Save details"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jcb4SubMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcb4SubActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jcb4Sys">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="0"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="Double click to locate Capital (if any)"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jcb4SysMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcb4SysActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jcb4Star">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="0"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="Double click to Load details"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jcb4StarMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcb4StarActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="panels.Panel4Grid3x3" name="panel4Sec">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[207, 255]"/>
+        </Property>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[207, 255]"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[207, 255]"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="panels.Panel4Grid6x6" name="panel4Sub">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[193, 255]"/>
+        </Property>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[193, 255]"/>
+        </Property>
+        <Property name="opaque" type="boolean" value="true"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[193, 255]"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="panels.Panel4T5BitSub" name="panel4Sys">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[200, 255]"/>
+        </Property>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[200, 255]"/>
+        </Property>
+        <Property name="opaque" type="boolean" value="true"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[200, 255]"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="panel4SysMouseMoved"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="panel4SysMouseClicked"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jsp4Maps">
+          <Properties>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[600, 600]"/>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="panels.Panel4T5BitSub" name="panel4Maps">
+              <Properties>
+                <Property name="toolTipText" type="java.lang.String" value="Pink = 10D ~ Grav Limit   Blue = 100D Jump Limit   Gray = 1000D Maneuver Limit"/>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[600, 600]"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="panel4MapsMouseClicked"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="panel4Strength">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c0" green="c0" id="lightGray" palette="1" red="c0" type="palette"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="Rons" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="SDBs" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="Troops" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="CF" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="defbats" alignment="0" min="-2" pref="53" max="-2" attributes="0"/>
+                      <Component id="troopunits" alignment="0" min="-2" pref="53" max="-2" attributes="0"/>
+                      <Component id="squadrons" alignment="0" min="-2" pref="53" max="-2" attributes="0"/>
+                      <Component id="sdbs1" alignment="0" min="-2" pref="53" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="SDBs" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="sdbs1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="squadrons" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="Rons" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="CF" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="defbats" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="Troops" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="troopunits" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="SDBs">
+          <Properties>
+            <Property name="displayedMnemonic" type="int" value="83"/>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="SDBs"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="SDBsMouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="8"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="defbats">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="X"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="defbatsMouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="Troops">
+          <Properties>
+            <Property name="displayedMnemonic" type="int" value="84"/>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Troops"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="TroopsMouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="8"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="troopunits">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="X"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="troopunitsMouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="squadrons">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="X"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="squadronsMouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="sdbs1">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="X"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="sdbs1MouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="Rons">
+          <Properties>
+            <Property name="displayedMnemonic" type="int" value="77"/>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Max Rons"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="RonsMouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="8"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="CF">
+          <Properties>
+            <Property name="displayedMnemonic" type="int" value="68"/>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Def. CF"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CFMouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="8"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="panel4T5PBG">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c0" green="c0" id="lightGray" palette="1" red="c0" type="palette"/>
+        </Property>
+        <Property name="opaque" type="boolean" value="false"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Pop"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel5MouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="8"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Belts"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel6MouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="8"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel7">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="GGs"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel7MouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="8"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel8">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="c0" green="c0" id="lightGray" palette="1" red="c0" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="0"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel9">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="c0" green="c0" id="lightGray" palette="1" red="c0" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="0"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel10">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="c0" green="c0" id="lightGray" palette="1" red="c0" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="0"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel11">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="W"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel11MouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="8"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel12">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="c0" green="c0" id="lightGray" palette="1" red="c0" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="0"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="panel4Pic">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="Cilck saves in T5"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[200, 100]"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="panel4PicMouseMoved"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="panel4PicMouseClicked"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="206" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="97" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+    <Component class="javax.swing.JSlider" name="js4Dist">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+        </Property>
+        <Property name="majorTickSpacing" type="int" value="1"/>
+        <Property name="maximum" type="int" value="9"/>
+        <Property name="paintLabels" type="boolean" value="true"/>
+        <Property name="paintTicks" type="boolean" value="true"/>
+        <Property name="snapToTicks" type="boolean" value="true"/>
+        <Property name="toolTipText" type="java.lang.String" value="+/- Jump Number"/>
+        <Property name="value" type="int" value="1"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[200, 40]"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="js4DistStateChanged"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="10"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jsp4Jump">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JList" name="jl4Jump">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+            <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+              <StringArray count="5">
+                <StringItem index="0" value="Item 1"/>
+                <StringItem index="1" value="Item 2"/>
+                <StringItem index="2" value="Item 3"/>
+                <StringItem index="3" value="Item 4"/>
+                <StringItem index="4" value="Item 5"/>
+              </StringArray>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Click to view, Double click to Jump"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jl4JumpMouseClicked"/>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jl4JumpMousePressed"/>
+            <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jl4JumpMouseReleased"/>
+            <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="jl4JumpValueChanged"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jsp4All">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jta4All">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jta4AllMouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="panel4Jump">
+      <Properties>
+        <Property name="opaque" type="boolean" value="false"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[200, 102]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Component id="jComboBox19" min="-2" pref="57" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jCheckBox1" min="-2" pref="55" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jCheckBox2" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+              </Group>
+              <Component id="jLabel3" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jComboBox19" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jCheckBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jCheckBox2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="displayedMnemonic" type="int" value="67"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Cost"/>
+            <Property name="toolTipText" type="java.lang.String" value="Click changes Cr"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="opaque" type="boolean" value="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel3MouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="jComboBox19">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="editable" type="boolean" value="true"/>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="25">
+                <StringItem index="0" value="100"/>
+                <StringItem index="1" value="200"/>
+                <StringItem index="2" value="300"/>
+                <StringItem index="3" value="400"/>
+                <StringItem index="4" value="500"/>
+                <StringItem index="5" value="600"/>
+                <StringItem index="6" value="700"/>
+                <StringItem index="7" value="800"/>
+                <StringItem index="8" value="900"/>
+                <StringItem index="9" value="1000"/>
+                <StringItem index="10" value="1100"/>
+                <StringItem index="11" value="1200"/>
+                <StringItem index="12" value="1300"/>
+                <StringItem index="13" value="1400"/>
+                <StringItem index="14" value="1500"/>
+                <StringItem index="15" value="1600"/>
+                <StringItem index="16" value="1700"/>
+                <StringItem index="17" value="1800"/>
+                <StringItem index="18" value="1900"/>
+                <StringItem index="19" value="2000"/>
+                <StringItem index="20" value="2100"/>
+                <StringItem index="21" value="2200"/>
+                <StringItem index="22" value="2300"/>
+                <StringItem index="23" value="2400"/>
+                <StringItem index="24" value="2500"/>
+              </StringArray>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Starship size in dtons"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jComboBox19MouseClicked"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox19ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="jCheckBox2">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Unrefined"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox2ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="jCheckBox1">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="dT"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox1ActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JComboBox" name="jcb4All">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="13">
+            <StringItem index="0" value="jta4All"/>
+            <StringItem index="1" value="jta4Sec"/>
+            <StringItem index="2" value="jta4Sub"/>
+            <StringItem index="3" value="jta4Sys"/>
+            <StringItem index="4" value="jta4Line"/>
+            <StringItem index="5" value="jta4Info"/>
+            <StringItem index="6" value="jta4Near"/>
+            <StringItem index="7" value="jta4Orb"/>
+            <StringItem index="8" value="jta4Dest"/>
+            <StringItem index="9" value="jta4Str"/>
+            <StringItem index="10" value="jta4HTML"/>
+            <StringItem index="11" value="jta4UWP"/>
+            <StringItem index="12" value="jta4Bases"/>
+          </StringArray>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcb4AllActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JComboBox&lt;&gt;()"/>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jtf4UWP">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Enter UWP or UPP &amp; click"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jtf4UWPMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtf4UWPActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jcb4Lang">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="6">
+            <StringItem index="0" value="Vilani"/>
+            <StringItem index="1" value="Zhodani"/>
+            <StringItem index="2" value="Vargr"/>
+            <StringItem index="3" value="Aslan"/>
+            <StringItem index="4" value="Droyne"/>
+            <StringItem index="5" value="Other"/>
+          </StringArray>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jcb4LangMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcb4LangActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jtf4Word">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Click gets word, CRL+C copies"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jtf4WordMouseClicked"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jtf4WordKeyPressed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value=""/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jcb4Options">
+      <Properties>
+        <Property name="maximumRowCount" type="int" value="10"/>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="11">
+            <StringItem index="0" value="_Choose"/>
+            <StringItem index="1" value="Squadrons"/>
+            <StringItem index="2" value="Troops"/>
+            <StringItem index="3" value="Counter"/>
+            <StringItem index="4" value="Scripting"/>
+            <StringItem index="5" value="Launch"/>
+            <StringItem index="6" value="Box"/>
+            <StringItem index="7" value="Backup"/>
+            <StringItem index="8" value="LPT"/>
+            <StringItem index="9" value="XML"/>
+            <StringItem index="10" value="Empire"/>
+          </StringArray>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jcb4OptionsMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcb4OptionsActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="sC" min="-2" pref="166" max="-2" attributes="0"/>
+                      <Component id="sB" min="-2" pref="166" max="-2" attributes="0"/>
+                      <Component id="sS" min="-2" pref="166" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="sC" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="sB" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="sS" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="sC">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="sc"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="sCMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="sB">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="sb"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="sBMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="sS">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="ss"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="sSMouseClicked"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JTextField" name="jtf4Find">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1910"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jtf4FindMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBox1">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="51">
+            <StringItem index="0" value="0-Hex"/>
+            <StringItem index="1" value="1-Name"/>
+            <StringItem index="2" value="2-UWP"/>
+            <StringItem index="3" value="  Starport"/>
+            <StringItem index="4" value="  Size"/>
+            <StringItem index="5" value="  Atmosphere"/>
+            <StringItem index="6" value="  Hydrosphere"/>
+            <StringItem index="7" value="  Population"/>
+            <StringItem index="8" value="  Government"/>
+            <StringItem index="9" value="  Law Level"/>
+            <StringItem index="10" value="  Tech Level"/>
+            <StringItem index="11" value="3-Remarks"/>
+            <StringItem index="12" value="4-Importance"/>
+            <StringItem index="13" value="5-Economic"/>
+            <StringItem index="14" value="  Resources"/>
+            <StringItem index="15" value="  Labour"/>
+            <StringItem index="16" value="  Infrastructure"/>
+            <StringItem index="17" value="  Efficiency"/>
+            <StringItem index="18" value="6-Cultural"/>
+            <StringItem index="19" value="  Homogeneity"/>
+            <StringItem index="20" value="  Acceptance"/>
+            <StringItem index="21" value="  Strangeness"/>
+            <StringItem index="22" value="  Symbols"/>
+            <StringItem index="23" value="7-Nobles"/>
+            <StringItem index="24" value="    B-Knight"/>
+            <StringItem index="25" value="    c-Baronet"/>
+            <StringItem index="26" value="    C-Baron"/>
+            <StringItem index="27" value="    D-Marquis"/>
+            <StringItem index="28" value="    e-Viscount"/>
+            <StringItem index="29" value="    E-Count"/>
+            <StringItem index="30" value="    f-Duke"/>
+            <StringItem index="31" value="    F-Duke"/>
+            <StringItem index="32" value="    G-Archduke"/>
+            <StringItem index="33" value="    H-Emperor"/>
+            <StringItem index="34" value="8-Bases"/>
+            <StringItem index="35" value="9-Zones"/>
+            <StringItem index="36" value="  Green"/>
+            <StringItem index="37" value="  Amber"/>
+            <StringItem index="38" value="  Red"/>
+            <StringItem index="39" value="10-PBG"/>
+            <StringItem index="40" value="  No pop"/>
+            <StringItem index="41" value="  Low pop"/>
+            <StringItem index="42" value="  Med pop"/>
+            <StringItem index="43" value="  HIGH POP"/>
+            <StringItem index="44" value="11-Worlds"/>
+            <StringItem index="45" value="12-Allegiance"/>
+            <StringItem index="46" value="13-Stellar"/>
+            <StringItem index="47" value="  Color"/>
+            <StringItem index="48" value="  Decimal"/>
+            <StringItem index="49" value="  Star Size"/>
+            <StringItem index="50" value="  Amount"/>
+          </StringArray>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jComboBox1MouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox1ActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cap"/>
+        <Property name="toolTipText" type="java.lang.String" value="Locate Subsector capital (or most important)"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton1MousePressed"/>
+        <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton1MouseReleased"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jcb4Career">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="9">
+            <StringItem index="0" value="Navy"/>
+            <StringItem index="1" value="Navy Officer"/>
+            <StringItem index="2" value="Marine"/>
+            <StringItem index="3" value="Marine Officer"/>
+            <StringItem index="4" value="Army"/>
+            <StringItem index="5" value="Army Officer"/>
+            <StringItem index="6" value="Other"/>
+            <StringItem index="7" value="Merchant"/>
+            <StringItem index="8" value="-Choose-"/>
+          </StringArray>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="Click and Hold Down!"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jcb4CareerMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcb4CareerActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JSpinner" name="js4Terms">
+      <Properties>
+        <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
+          <SpinnerModel initial="0" numberType="java.lang.Integer" stepSize="1" type="number"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="Terms"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="js4TermsStateChanged"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="js4TermsMouseClicked"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jtf4UPP">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="AAAAAA"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[6, 1]"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[45, 20]"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jtf4UPPMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtf4UPPActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jtf4UPPKeyPressed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="S"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="2"/>
+        <Property name="text" type="java.lang.String" value="UWP"/>
+        <Property name="horizontalTextPosition" type="int" value="2"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel4MouseClicked"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="10"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="Sex">
+      <Properties>
+        <Property name="selected" type="boolean" value="true"/>
+        <Property name="toolTipText" type="java.lang.String" value="Male"/>
+        <Property name="iconTextGap" type="int" value="0"/>
+        <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+          <Insets value="[0, 0, 0, 0]"/>
+        </Property>
+        <Property name="opaque" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SexActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="java.awt.Label" name="label1">
+      <Properties>
+        <Property name="alignment" type="int" value="1"/>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="About"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="label1MouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBox2">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="13">
+            <StringItem index="0" value="Regina"/>
+            <StringItem index="1" value="Fraynj"/>
+            <StringItem index="2" value="Kesali"/>
+            <StringItem index="3" value="Capital"/>
+            <StringItem index="4" value="createCommodores()"/>
+            <StringItem index="5" value="createNPCs()"/>
+            <StringItem index="6" value="createMOfficers()"/>
+            <StringItem index="7" value="createAdmiral()"/>
+            <StringItem index="8" value="createBases()"/>
+            <StringItem index="9" value="createFamily()"/>
+            <StringItem index="10" value="createOrbitCounters()"/>
+            <StringItem index="11" value="bits2Page()"/>
+            <StringItem index="12" value="updatePic()"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox2ActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="10"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="go"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jcb4Rank">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Item 1"/>
+            <StringItem index="1" value="Item 2"/>
+            <StringItem index="2" value="Item 3"/>
+            <StringItem index="3" value="Item 4"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcb4RankActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+  </SubComponents>
+</Form>

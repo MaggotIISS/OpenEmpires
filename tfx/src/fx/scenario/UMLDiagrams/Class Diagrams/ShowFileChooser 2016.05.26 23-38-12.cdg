@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ShowFileChooser">
+  <ClassDiagramComponents>
+    <Class name="ShowFileChooser" package="fx.filechooser" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="addLine" type="EventHandler&lt;ActionEvent&gt;" visibility="package"/>
+        <Field name="clickEvent" type="EventHandler&lt;? super MouseEvent&gt;" visibility="package"/>
+        <Field name="dirEvent" type="EventHandler&lt;? super MouseEvent&gt;" visibility="package"/>
+        <Field name="nameEvent" type="EventHandler&lt;? super MouseEvent&gt;" visibility="package"/>
+        <Field name="extEvent" type="EventHandler&lt;? super MouseEvent&gt;" visibility="package"/>
+        <Field name="fileEvent" type="EventHandler&lt;? super MouseEvent&gt;" visibility="package"/>
+        <Field name="saveEvent" type="EventHandler&lt;? super MouseEvent&gt;" visibility="package"/>
+        <Field name="dir" type="Label" visibility="package"/>
+        <Field name="name" type="Label" visibility="package"/>
+        <Field name="ext" type="Label" visibility="package"/>
+        <Field name="fileChooser" type="FileChooser" visibility="package"/>
+        <Field name="textArea" type="TextArea" visibility="package"/>
+        <Field name="textArea2" type="TextArea" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="start" returnType="void" visibility="public">
+          <Argument type="Stage" name="primaryStage"/>
+        </Method>
+        <Method name="setupChooser" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

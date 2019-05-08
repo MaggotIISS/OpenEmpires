@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorpane" prefHeight="404.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.xml.XMLController">
+  <children>
+    <MenuBar id="menu" fx:id="menu" disable="true" layoutY="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <Label id="label" fx:id="label" contentDisplay="TOP" layoutX="132.0" layoutY="4.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="189.0" text="Test" />
+    <TextField id="textfield" fx:id="textfield" layoutX="132.0" layoutY="50.0" onAction="#textChange" prefHeight="25.0" prefWidth="132.0" promptText="XPath" />
+    <TextField id="textfield" fx:id="TemplateText" layoutX="132.0" layoutY="75.0" onAction="#textChange" prefHeight="25.0" prefWidth="132.0" promptText="TemplateText" />
+    <Button layoutX="132.0" layoutY="25.0" mnemonicParsing="false" onAction="#runxpath" prefHeight="25.0" prefWidth="132.0" text="XPath" fx:id="xpbut" />
+    <ComboBox id="ncombo" fx:id="method" layoutY="25.0" onAction="#methodChange" prefHeight="25.0" prefWidth="132.0" promptText="Method" />
+    <ComboBox id="ncombo" fx:id="combo" layoutY="50.0" onAction="#comboChange" prefHeight="25.0" prefWidth="132.0" promptText="Match" />
+    <ComboBox id="ncombo" fx:id="Template" layoutY="75.0" onAction="#templateChange" prefHeight="25.0" prefWidth="132.0" promptText="Template" />
+    <Button id="button" fx:id="button" layoutY="100.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="265.0" text="Click Me!" />
+    <ScrollPane layoutY="125.0" prefViewportHeight="140.0" prefViewportWidth="189.0">
+      <content>
+        <TextArea id="textarea" fx:id="textarea" layoutY="125.0" text="" />
+      </content>
+    </ScrollPane>
+    <ScrollPane layoutX="204.0" layoutY="125.0" prefViewportHeight="140.0" prefViewportWidth="189.0">
+      <content>
+        <TextArea id="textarea1" fx:id="textarea1" layoutX="198.0" layoutY="125.0" text="" />
+      </content>
+    </ScrollPane>
+    <ScrollPane layoutY="280.0" prefViewportHeight="140.0" prefViewportWidth="189.0">
+      <content>
+        <TextArea id="textarea2" fx:id="textarea2" layoutY="271.0" text="" />
+      </content>
+    </ScrollPane>
+    <ScrollPane layoutX="204.0" layoutY="280.0" prefViewportHeight="140.0" prefViewportWidth="189.0">
+      <content>
+        <TextArea id="textarea3" fx:id="textarea3" layoutX="198.0" layoutY="271.0" text="" />
+      </content>
+    </ScrollPane>
+  </children>
+</AnchorPane>

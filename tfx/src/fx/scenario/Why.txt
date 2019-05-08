@@ -1,0 +1,10 @@
+   Fight
+   Shoot
+   Travel
+   Jump
+   Buy
+   Sell
+   Work
+   Rest
+   Play
+   Politics

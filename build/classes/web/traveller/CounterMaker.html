@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Counter Maker</title>
+    <!-- onload() -->
+    <script>
+      function onload() {
+      var fs = "/";
+      var start="C://T5/";
+      var sec="Spinward Marches";
+      var sub="C Regina";
+      var sys="1910 Regina";
+      var type="Admiral";
+      var txt="001";
+      var ext=".gif";
+      var start = "file:///C://T5/";
+      var most = start + types.value;
+      // Check browser support
+      if (typeof(Storage) !== "undefined") {
+      // Store
+      localStorage.setItem("sec", sec);
+      localStorage.setItem("sub", sub);
+      localStorage.setItem("sys", sys);
+      // Retrieve
+      var start = "file:///C://T5/";
+      var most = start +
+      localStorage.getItem("sec") + "/" +
+      localStorage.getItem("sub") + "/" +
+      localStorage.getItem("sys") + "/" +
+      localStorage.getItem("sys") + "/" +
+      document.getElementById("lid02").value;
+      document.getElementById("result").innerHTML = most;
+      } else {
+      document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+      }
+      go();
+      }
+    </script>
+  </head>
+
+  <body onload="onload()" >
+    <!-- go() -->
+    <script>
+      function go() {
+      sys = "1910 Regina";
+      type = types.value;
+      txt = "s";
+      ext = ".gif";
+      start = "file:///C://T5/";
+      sec = document.getElementById("secc").value;
+      sub = document.getElementById("subb").value;
+      hex = document.getElementById("hexx").value;
+      mainworld = document.getElementById("mainworldd").value;
+      named = document.getElementById("hexx").value + "-" + document.getElementById("mainworldd").value;
+      type = document.getElementById("lid02").value=(hexx.value + "-" + types.value);
+      most = start + sec + "/" + sub + "/" + sys + "/" + sys + "/" + lid02.value;
+      document.getElementById("result").innerHTML = "<-- <br/>" + most + "<br/> -->";
+      // Check browser support
+      if (typeof(Storage) !== "undefined") {
+      // Store
+      sec = document.getElementById("secc").value;
+      localStorage.setItem("sec", sec);
+      localStorage.setItem("sub", sub);
+      localStorage.setItem("sys", sys);
+      // Retrieve
+      start = "file:///C://T5/";
+      most = start +
+      localStorage.getItem("sec") + "/" +
+      localStorage.getItem("sub") + "/" +
+      localStorage.getItem("sys") + "/" +
+      localStorage.getItem("sys") + "/" + document.getElementById("lid02").value;
+      document.getElementById("result").innerHTML = "<-- <br/>" + most + "<br/> -->";
+      if(check.checked === "true") {
+      alert(check.checked);
+      }
+      } else {
+      document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+      }
+      }
+    </script>
+    <!-- Hyperlinks -->
+    <div>
+      &lt;-- <a href="./BlankPage.html">BlankPage</a> --&gt;<br/>
+      &lt;-- <a href="https://www.w3schools.com/tags/default.asp">w3schools</a> --&gt;<br/>
+      &lt;-- <a href="../TLinks.html">Traveller</a> --&gt;<br/>
+    </div>
+    <!-- result -->
+    <p id="result"></p><br/>
+    <!-- Where -->
+    <div>
+      <input id="secc" type="text" name="sec" value="Spinward Marches" size="15" onchange="go()"  />/
+      <input id="subb" type="text" name="sub" value="C Regina" size="8"  onchange="go()" />/
+      <input id="hexx" type="text" name="hex" value="1910" size="4"  onchange="go()" />
+      <input id="mainworldd" type="text" name="name" value="Regina" size="14" onchange="go()" /><br/>
+    </div>
+    <!-- Options -->
+    <div>
+      <select id="types" name="type" onchange="go()">
+        <option>Admiral</option>
+        <option>Army</option>
+        <option>Belt</option>
+        <option>Blank</option>
+        <option>Commodore</option>
+        <option>Defence</option>
+        <option>Fleet</option>
+        <option>Gas Giant</option>
+        <option>Map</option>
+        <option>Marine</option>
+        <option>Merchant</option>
+        <option>NPC</option>
+        <option>NPC-Navy</option>
+        <option>NPC-Marine</option>
+        <option>NPC-Army</option>
+        <option>NPC-Scout</option>
+        <option>NPC-Other</option>
+        <option>NPC-Merchant</option>
+        <option>Navy</option>
+        <option>Orbital</option>
+        <option>Other</option>
+        <option>Population</option>
+        <option>Scout</option>
+        <option>SDB</option>
+        <option>Squadron</option>
+        <option>Star</option>
+        <option>Sector</option>
+        <option>Subsector</option>
+        <option>System</option>
+        <option>Troop</option>
+        <option>UWP</option>
+        <option>UPP</option>
+        <option>USP</option>
+        <option>USqP</option>
+        <option>UTP</option>
+        <option>UVP</option>
+        <option>UBP</option>
+        <option>World</option>
+        <option>WHO</option>
+        <option>WHAT</option>
+        <option>WHY</option>
+        <option>WHERE</option>
+        <option>WHEN</option>
+        <option>WITH</option>
+        <option>WHICH</option>
+      </select>
+      <input id="check" type="checkbox" name="plural" value="OFF" title="Plural Names" onchange="go()" />
+      <input id="extra" type="text" name="more" value=""  size="5" onchange="go()" />.gif<br/>
+      <input id="button" type="button" value="Load" name="loadBut" onclick="load()" onchange="go()" />
+      <input id="button1" type="button" value="Save" name="saveBut" onclick="save()" onchange="go()" /><br/>
+      <!--
+      <input type="button" value="Go" name="goButton" onclick="go()"/>
+      -->
+    </div>
+    <!-- Lines -->
+    <div>
+      <input id="lid01" type="text" name="l1" value="1" />
+      <input id="lid02" type="text" name="l2" value="2" /><br/>
+      <input id="lid03" type="text" name="l3" value="3" />
+      <input id="lid04" type="text" name="l4" value="4" /><br/>
+      <input id="lid05" type="text" name="l5" value="5" />
+      <input id="lid06" type="text" name="l6" value="6" /><br/>
+      <input id="lid07" type="text" name="l7" value="7" />
+      <input id="lid08" type="text" name="l8" value="8" /><br/>
+      <input id="lid09" type="text" name="l9" value="9" />
+      <input id="1id10" type="text" name="l10" value="10" /><br/>
+      <input id="lid11" type="text" name="l11" value="11" />
+      <input id="lid12" type="text" name="l12" value="12" /><br/>
+      <input id="lid13" type="text" name="l13" value="13" />
+      <input id="lid14" type="text" name="l14" value="14" /><br/>
+      <input id="lid15" type="text" name="l15" value="15" />
+      <input id="lid16" type="text" name="l16" value="16" /><br/>
+      <input id="lid17" type="text" name="l17" value="17" />
+      <input id="lid18" type="text" name="l18" value="18" /><br/>
+      <input id="lid19" type="text" name="l19" value="19" />
+      <input id="lid20" type="text" name="l20" value="20" /><br/>
+    </div>
+    <!-- TextArea -->
+    <div>
+      <textarea id="ta" name="Notes" rows="6" cols="35">NOTE:</textarea><br/>
+    </div>
+    <!-- FilePathName -->
+    <div id="filepathname"><br/></div>
+    <!-- BlankPic -->
+    <div>
+      <img id="blankpic" src="Spinward Marches/C Regina/1910 Regina/1910 Regina/1910-Blank.gif"
+           width="200" height="100" alt="1910-Blank" onclick="picclick()"/><br/>
+    </div>
+    <!-- ShowPic() -->
+    <div>
+      <input type="file" name="Picture" onclick="showpic()"/><br/>
+    </div>
+    <!-- showpic -->
+    <script>
+      function showpic() {
+      //alert("showpic()");
+      }
+    </script>
+    <!-- picclick() -->
+    <script>
+      function picclick() {
+      document.getElementById("name").innerHTML=("<-- <a href='" + blankpic.src + "'>" + blankpic.alt + "</> -->");
+      document.getElementById("filepathname").innerHTML = blankpic.src;
+      //alert("picclick()");
+      }
+    </script>
+    <!-- load() -->
+    <script>
+      function load() {
+      //alert("load()");
+      go();
+      }
+    </script>
+    <!-- save() -->
+    <script>
+      function save() {
+      //alert("save()");
+      go();
+      }
+    </script>
+    <!-- onchange() -->
+    <script>
+      function onchange() {
+      alert("onchange");
+      }
+    </script>
+    <!--  -->
+    <div>
+    </div>
+    <!--  -->
+    <div>
+    </div>
+  </body>
+</html>

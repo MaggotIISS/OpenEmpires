@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="352.0" prefWidth="321.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.sophontoids.SophontoidsController">
+  <children>
+    <TextField fx:id="NUM" alignment="CENTER" layoutX="16.0" layoutY="25.0" onAction="#recalc" prefHeight="25.0" prefWidth="38.0" text="100" />
+    <TextField fx:id="STR" alignment="CENTER" layoutX="42.0" layoutY="52.0" onAction="#recalc" prefHeight="25.0" prefWidth="38.0" text="7" />
+    <TextField fx:id="DEX" alignment="CENTER" layoutX="42.0" layoutY="77.0" onAction="#recalc" prefHeight="25.0" prefWidth="38.0" text="7" />
+    <TextField fx:id="END" alignment="CENTER" layoutX="42.0" layoutY="102.0" onAction="#recalc" prefHeight="25.0" prefWidth="38.0" text="7" />
+    <TextField fx:id="INT" alignment="CENTER" layoutX="42.0" layoutY="127.0" onAction="#recalc" prefHeight="25.0" prefWidth="38.0" text="7" />
+    <Label fx:id="units" layoutX="4.0" layoutY="30.0" onMouseClicked="#recalc" prefHeight="17.0" prefWidth="11.0" text="*" />
+    <RadioButton fx:id="quality" layoutX="65.0" layoutY="29.0" mnemonicParsing="false" onAction="#qualityOptionAction" text="Standard" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="29.0" />
+    <Label fx:id="l4str" layoutX="8.0" layoutY="56.0" text="STR" />
+    <Label fx:id="l4dex" layoutX="8.0" layoutY="81.0" text="DEX" />
+    <Label fx:id="l4end" layoutX="8.0" layoutY="106.0" text="END" />
+    <Label fx:id="l4int" layoutX="11.0" layoutY="131.0" text="INT" />
+    <Label fx:id="l4c1" layoutX="83.0" layoutY="56.0" onMouseClicked="#Change" text="C1" />
+    <Label fx:id="l4c2" layoutX="83.0" layoutY="81.0" onMouseClicked="#Change" text="C2" />
+    <Label fx:id="l4c3" layoutX="83.0" layoutY="106.0" onMouseClicked="#Change" text="C3" />
+    <Label fx:id="l4c4" layoutX="83.0" layoutY="131.0" onMouseClicked="#Change" text="C4" />
+    <Label layoutX="236.0" layoutY="6.0" text="KCr" />
+    <Label fx:id="l4cost" layoutX="276.0" layoutY="6.0" text="0.000" />
+    <Label fx:id="l4used" layoutX="104.0" layoutY="56.0" text="0" />
+    <Label layoutX="104.0" layoutY="81.0" text="out" />
+    <Label layoutX="104.0" layoutY="106.0" text="of" />
+    <Label fx:id="l4max" layoutX="104.0" layoutY="131.0" text="28" />
+    <Label fx:id="l4maxskill" layoutX="129.0" layoutY="131.0" text="12" />
+    <Label layoutX="129.0" layoutY="106.0" text="of" />
+    <Label layoutX="129.0" layoutY="81.0" text="out" />
+    <Label fx:id="l4usedskill" layoutX="129.0" layoutY="56.0" text="0" />
+    <TextArea fx:id="ta4stats" layoutX="4.0" layoutY="152.0" prefHeight="200.0" prefWidth="146.0" />
+    <TextArea fx:id="ta4skills" layoutX="-161.0" layoutY="259.0" prefHeight="25.0" prefWidth="146.0" />
+    <ComboBox fx:id="Dice" layoutX="157.0" onAction="#qualityOptionAction" prefHeight="25.0" prefWidth="59.0" />
+    <ComboBox fx:id="Obtrusive" layoutX="2.0" layoutY="114.0" onAction="#recalc" prefWidth="150.0" visible="false" />
+    <ComboBox fx:id="Unobtrusive" layoutX="2.0" layoutY="139.0" onAction="#recalc" prefWidth="150.0" visible="false" />
+    <ComboBox fx:id="Control" layoutX="2.0" layoutY="164.0" onAction="#recalc" prefWidth="150.0" visible="false" />
+    <Label layoutX="217.0" layoutY="6.0" text="D" />
+    <ComboBox fx:id="Skills" layoutX="157.0" layoutY="53.0" onAction="#addSkill" prefHeight="25.0" prefWidth="159.0" />
+    <ComboBox fx:id="SkillSet" layoutX="157.0" layoutY="27.0" onAction="#setSkills" prefHeight="25.0" prefWidth="159.0" />
+    <TextArea fx:id="SkillTxt" layoutX="156.0" layoutY="78.0" prefHeight="157.0" prefWidth="159.0" />
+    <ComboBox fx:id="Race" layoutX="7.0" onAction="#raceChange" prefHeight="25.0" prefWidth="146.0" />
+    <Label fx:id="l4About" alignment="CENTER" contentDisplay="CENTER" layoutX="151.0" layoutY="330.0" onMouseClicked="#showAbout" prefHeight="17.0" prefWidth="170.0" text="About" underline="true" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="0.0" />
+  </children>
+</AnchorPane>

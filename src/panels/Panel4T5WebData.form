@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="J9"/>
+        <Property name="toolTipText" type="java.lang.String" value="click to view"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel1MouseClicked"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="10"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="data"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel4MouseClicked"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="10"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="html">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="to .html"/>
+        <Property name="toolTipText" type="java.lang.String" value="Write web page"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="htmlMouseClicked"/>
+      </Events>
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="0" green="0" red="0" type="rgb"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane4" pref="0" max="32767" attributes="0"/>
+                  <Component id="out" alignment="0" pref="439" max="32767" attributes="0"/>
+                  <Component id="jScrollPane7" pref="439" max="32767" attributes="0"/>
+                  <Component id="jScrollPane9" pref="439" max="32767" attributes="0"/>
+                  <Component id="jScrollPane3" alignment="0" pref="439" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane10" max="32767" attributes="0"/>
+                  <Component id="jScrollPane5" alignment="0" max="32767" attributes="0"/>
+                  <Component id="jScrollPane6" pref="279" max="32767" attributes="0"/>
+                  <Component id="jScrollPane11" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jcb4Sec" min="-2" pref="153" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="x" min="-2" pref="23" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="y" min="-2" pref="23" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="sec" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="sub" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="let" min="-2" pref="23" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="hex" min="-2" pref="36" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jump" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="sys" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="style" min="-2" pref="91" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="scale" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="option" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="subsecupdate" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="auto" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="skyrig" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="worldTest" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="0" pref="125" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jcb4Sec" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="let" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="hex" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="sub" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="sec" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="x" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="y" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jump" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="sys" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="auto" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="style" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="scale" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="option" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="skyrig" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="subsecupdate" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="worldTest" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jScrollPane10" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Component id="jScrollPane11" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                      <Component id="jScrollPane5" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane6" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="jScrollPane7" pref="184" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Component id="jScrollPane3" pref="181" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Component id="out" pref="34" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Component id="jScrollPane9" pref="114" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Component id="jScrollPane4" pref="194" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="download all"/>
+        <Property name="toolTipText" type="java.lang.String" value="click and wait OR select in combo"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel3MouseClicked"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="10"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jcb4Sec">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="0"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="select sector"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jcb4SecMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcb4SecActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="x">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+        <Property name="toolTipText" type="java.lang.String" value="Sector X"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="8"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="hex">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1910"/>
+        <Property name="toolTipText" type="java.lang.String" value="Sector wide coordinates"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="8"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="y">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+        <Property name="toolTipText" type="java.lang.String" value="Sector Y"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="8"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="let">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="C"/>
+        <Property name="toolTipText" type="java.lang.String" value="Subsector Letter"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="8"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="sub">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="XXX"/>
+        <Property name="toolTipText" type="java.lang.String" value="Subsector"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="8"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="sec">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="XXX"/>
+        <Property name="toolTipText" type="java.lang.String" value="Sector"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="8"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jump">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="9"/>
+        <Property name="toolTipText" type="java.lang.String" value="Jump Range"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="8"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="auto">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="auto"/>
+        <Property name="toolTipText" type="java.lang.String" value="write 1 world"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="autoMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="sys">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Regina"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="style">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="poster"/>
+            <StringItem index="1" value="print"/>
+            <StringItem index="2" value="atlas"/>
+            <StringItem index="3" value="candy"/>
+          </StringArray>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="Style"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="styleActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="scale">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="91"/>
+        <Property name="toolTipText" type="java.lang.String" value="Scale(64)"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="option">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="58207 "/>
+        <Property name="toolTipText" type="java.lang.String" value="Options"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="optionActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="skyrig">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="SkyRig"/>
+        <Property name="toolTipText" type="java.lang.String" value="select 7 worlds"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="skyrigMouseClicked"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="10"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="offline"/>
+        <Property name="toolTipText" type="java.lang.String" value="online/offline"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel2MouseClicked"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="10"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="subsecupdate">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="fromSub"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="subsecupdateMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="toTxt"/>
+        <Property name="toolTipText" type="java.lang.String" value="Create .txt files"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel5MouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="out">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="rows" type="int" value="1"/>
+        <Property name="toolTipText" type="java.lang.String" value="out"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JList" name="orig">
+          <Properties>
+            <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+              <StringArray count="108">
+                <StringItem index="0" value="   &lt;iframe"/>
+                <StringItem index="1" value="   src=&quot;http://travellermap.com/iframe.htm?sector=Spinward%20Marches&amp;hex=1910&quot;"/>
+                <StringItem index="2" value="   style=&quot;width: 900px; height: 700px; border: solid 1px black;&quot;&gt;"/>
+                <StringItem index="3" value="   &lt;/iframe&gt;"/>
+                <StringItem index="4" value="   &lt;img src=&quot;http://www.travellermap.com/?x=-97.004&amp;y=73&amp;scale=120&quot;&gt;"/>
+                <StringItem index="5" value="   &lt;img src=&quot;http://travellermap.com/api/jumpmap?sector=Spinward%20Marches&amp;hex=1910&amp;jump=9&amp;scale=120&amp;options=58207&amp;style=poster&quot;&gt;"/>
+                <StringItem index="6" value="   &lt;img src=&quot;http://travellermap.com/api/jumpmap?sector=Spinward%20Marches&amp;hex=1910&amp;jump=9&amp;scale=120&amp;options=58207&amp;style=candy&quot;&gt;"/>
+                <StringItem index="7" value="   &lt;img src=&quot;http://travellermap.com/api/jumpmap?sector=Spinward%20Marches&amp;hex=1910&amp;jump=9&amp;scale=120&amp;options=58207&amp;style=atlas&quot;&gt;"/>
+                <StringItem index="8" value="   &lt;img src=&quot;http://travellermap.com/api/jumpmap?sector=Spinward%20Marches&amp;hex=1910&amp;jump=9&amp;scale=120&amp;options=58207&amp;style=print&quot;&gt;"/>
+                <StringItem index="9" value="   http://www.travellermap.com/world?sector=Spinward%20Marches&amp;hex=1910"/>
+                <StringItem index="10" value="   http://travellermap.com/api/poster?sector=spin&amp;scale=120&amp;options=58207&amp;style=atlas"/>
+                <StringItem index="11" value="   http://travellermap.com/api/coordinates?sx=-4&amp;sy=-1"/>
+                <StringItem index="12" value="   http://travellermap.com/api/coordinates?sx=-4&amp;sy=-1&amp;hx=19&amp;hy=10"/>
+                <StringItem index="13" value="   http://travellermap.com/api/coordinates?sector=Spinward%20Marches&amp;hex=1910"/>
+                <StringItem index="14" value="   http://travellermap.com/api/coordinates?sector=Spinward%20Marches"/>
+                <StringItem index="15" value="   http://travellermap.com/api/credits?sector=Spinward%20Marches &amp;scale=120&amp;options=58207 &amp;style=atlas"/>
+                <StringItem index="16" value="   http://travellermap.com/api/credits?sector=Spinward%20Marches&amp;hex=1910"/>
+                <StringItem index="17" value="   http://travellermap.com/api/credits?sx=-4&amp;sy=-1"/>
+                <StringItem index="18" value="   http://travellermap.com/api/credits?sx=-4&amp;sy=-1&amp;hx=19&amp;hy=10"/>
+                <StringItem index="19" value="   http://travellermap.com/api/credits?x=-4&amp;y=-1"/>
+                <StringItem index="20" value="   http://www.travellermap.com/api/credits?x=-110&amp;y=-70"/>
+                <StringItem index="21" value="   http://travellermap.com/api/sec?sector=Spinward%20Marches"/>
+                <StringItem index="22" value="   http://travellermap.com/api/sec?sector=Spinward%20Marches&amp;hex=1910"/>
+                <StringItem index="23" value="   http://travellermap.com/api/sec?sx=-4&amp;sy=-1"/>
+                <StringItem index="24" value="   http://travellermap.com/api/metadata?sector=Spinward%20Marches"/>
+                <StringItem index="25" value="   http://travellermap.com/api/metadata?sx=-4&amp;sy=-1"/>
+                <StringItem index="26" value="   http://www.travellermap.com/api/metadata?sector=Spinward%20Marches"/>
+                <StringItem index="27" value="   http://www.travellermap.com/api/msec?sector=Spinward%20Marches"/>
+                <StringItem index="28" value="   http://www.travellermap.com/api/universe?era=1000"/>
+                <StringItem index="29" value="   http://www.travellermap.com/api/tile?x=-24.5&amp;y=-18&amp;scale=120&amp;options=887&amp;style=poster"/>
+                <StringItem index="30" value="   http://travellermap.com/api/poster?sector=Spinward%20Marches"/>
+                <StringItem index="31" value="   http://travellermap.com/api/poster?sector=Spinward%20Marches"/>
+                <StringItem index="32" value="   http://travellermap.com/api/jumpmap?x=-4&amp;y=-1"/>
+                <StringItem index="33" value="   http://travellermap.com/api/jumpmap?sx=-4&amp;-1=sy&amp;hx=19&amp;hy=10"/>
+                <StringItem index="34" value="   http://travellermap.com/api/jumpmap?sector=Spinward%20Marches&amp;hex=1910"/>
+                <StringItem index="35" value="   http://travellermap.com/api/msec?sector=Spinward%20Marches"/>
+                <StringItem index="36" value="   http://travellermap.com/api/msec?sx=-4&amp;sy=-1"/>
+                <StringItem index="37" value="   http://travellermap.com/api/jumpworlds?x=-4&amp;y=-1"/>
+                <StringItem index="38" value="   http://travellermap.com/api/jumpworlds?sx=-4&amp;sy=-1&amp;hx=19&amp;hy=10"/>
+                <StringItem index="39" value="   http://travellermap.com/api/jumpworlds?sector=Spinward%20Marches&amp;hex=1910"/>
+                <StringItem index="40" value="   http://travellermap.com/api/search?q=terra"/>
+                <StringItem index="41" value="   http://travellermap.com/api/universe"/>
+                <StringItem index="42" value="   http://www.travellermap.com/api/coordinates?sector=Spinward%20Marches&amp;hex=1910"/>
+                <StringItem index="43" value="   http://travellermap.com/data"/>
+                <StringItem index="44" value="   http://travellermap.com/data/Spinward%20Marches/image"/>
+                <StringItem index="45" value="   http://travellermap.com/data/Spinward%20Marches/A/image"/>
+                <StringItem index="46" value="   http://travellermap.com/data/Spinward%20Marches/B/image"/>
+                <StringItem index="47" value="   http://travellermap.com/data/Spinward%20Marches/C/image"/>
+                <StringItem index="48" value="   http://travellermap.com/data/Spinward%20Marches/D/image"/>
+                <StringItem index="49" value="   http://travellermap.com/data/Spinward%20Marches/E/image"/>
+                <StringItem index="50" value="   http://travellermap.com/data/Spinward%20Marches/F/image"/>
+                <StringItem index="51" value="   http://travellermap.com/data/Spinward%20Marches/G/image"/>
+                <StringItem index="52" value="   http://travellermap.com/data/Spinward%20Marches/H/image"/>
+                <StringItem index="53" value="   http://travellermap.com/data/Spinward%20Marches/I/image"/>
+                <StringItem index="54" value="   http://travellermap.com/data/Spinward%20Marches/J/image"/>
+                <StringItem index="55" value="   http://travellermap.com/data/Spinward%20Marches/K/image"/>
+                <StringItem index="56" value="   http://travellermap.com/data/Spinward%20Marches/L/image"/>
+                <StringItem index="57" value="   http://travellermap.com/data/Spinward%20Marches/M/image"/>
+                <StringItem index="58" value="   http://travellermap.com/data/Spinward%20Marches/N/image"/>
+                <StringItem index="59" value="   http://travellermap.com/data/Spinward%20Marches/O/image"/>
+                <StringItem index="60" value="   http://travellermap.com/data/Spinward%20Marches/P/image"/>
+                <StringItem index="61" value="   http://travellermap.com/data/Spinward%20Marches/image"/>
+                <StringItem index="62" value="   http://travellermap.com/data/Spinward%20Marches"/>
+                <StringItem index="63" value="   http://travellermap.com/data/Spinward%20Marches/tab"/>
+                <StringItem index="64" value="   http://travellermap.com/data/Spinward%20Marches/sec"/>
+                <StringItem index="65" value="   http://travellermap.com/data/Spinward%20Marches/metadata"/>
+                <StringItem index="66" value="   http://travellermap.com/data/Spinward%20Marches/msec"/>
+                <StringItem index="67" value="   http://travellermap.com/data/Spinward%20Marches/image"/>
+                <StringItem index="68" value="   http://travellermap.com/data/Spinward%20Marches/coordinates"/>
+                <StringItem index="69" value="   http://travellermap.com/data/Spinward%20Marches/credits"/>
+                <StringItem index="70" value="   http://travellermap.com/data/Spinward%20Marches/A"/>
+                <StringItem index="71" value="   http://travellermap.com/data/Spinward%20Marches/B"/>
+                <StringItem index="72" value="   http://travellermap.com/data/Spinward%20Marches/C"/>
+                <StringItem index="73" value="   http://travellermap.com/data/Spinward%20Marches/D"/>
+                <StringItem index="74" value="   http://travellermap.com/data/Spinward%20Marches/E"/>
+                <StringItem index="75" value="   http://travellermap.com/data/Spinward%20Marches/F"/>
+                <StringItem index="76" value="   http://travellermap.com/data/Spinward%20Marches/G"/>
+                <StringItem index="77" value="   http://travellermap.com/data/Spinward%20Marches/H"/>
+                <StringItem index="78" value="   http://travellermap.com/data/Spinward%20Marches/I"/>
+                <StringItem index="79" value="   http://travellermap.com/data/Spinward%20Marches/J"/>
+                <StringItem index="80" value="   http://travellermap.com/data/Spinward%20Marches/K"/>
+                <StringItem index="81" value="   http://travellermap.com/data/Spinward%20Marches/L"/>
+                <StringItem index="82" value="   http://travellermap.com/data/Spinward%20Marches/M"/>
+                <StringItem index="83" value="   http://travellermap.com/data/Spinward%20Marches/N"/>
+                <StringItem index="84" value="   http://travellermap.com/data/Spinward%20Marches/O"/>
+                <StringItem index="85" value="   http://travellermap.com/data/Spinward%20Marches/P"/>
+                <StringItem index="86" value="   http://travellermap.com/data/Spinward%20Marches/c/tab"/>
+                <StringItem index="87" value="   http://travellermap.com/data/Spinward%20Marches/c/sec"/>
+                <StringItem index="88" value="   http://travellermap.com/data/Spinward%20Marches/c/image"/>
+                <StringItem index="89" value="   http://travellermap.com/data/Spinward%20Marches/1910/coordinates"/>
+                <StringItem index="90" value="   http://travellermap.com/data/Spinward%20Marches/1910/credits"/>
+                <StringItem index="91" value="   http://travellermap.com/data/Spinward%20Marches/1910/jump/9"/>
+                <StringItem index="92" value="   http://travellermap.com/data/Spinward%20Marches/1910/jump/9/image"/>
+                <StringItem index="93" value="   http://travellermap.com/data/Spinward%20Marches/coordinates"/>
+                <StringItem index="94" value="   http://travellermap.com/data/Spinward%20Marches/1910/coordinates"/>
+                <StringItem index="95" value="   http://travellermap.com/data/Spinward%20Marches/credits"/>
+                <StringItem index="96" value="   http://travellermap.com/data/Spinward%20Marches/1910/credits"/>
+                <StringItem index="97" value="   http://travellermap.com/data/Spinward%20Marches"/>
+                <StringItem index="98" value="   http://travellermap.com/data/Spinward%20Marches/sec"/>
+                <StringItem index="99" value="   http://travellermap.com/data/Spinward%20Marches/tab"/>
+                <StringItem index="100" value="   http://travellermap.com/data/Spinward%20Marches/c"/>
+                <StringItem index="101" value="   http://travellermap.com/data/Spinward%20Marches/c/sec"/>
+                <StringItem index="102" value="   http://travellermap.com/data/Spinward%20Marches/c/tab"/>
+                <StringItem index="103" value="   http://travellermap.com/data/Spinward%20Marches/metadata"/>
+                <StringItem index="104" value="   http://travellermap.com/data/Spinward%20Marches/msec"/>
+                <StringItem index="105" value="   http://travellermap.com/data/Spinward%20Marches/1910/jump/9"/>
+                <StringItem index="106" value="   http://travellermap.com/data/Spinward%20Marches/1910/jump/9/image"/>
+                <StringItem index="107" value="   http://travellermap.com/data"/>
+              </StringArray>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="orig"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="origMouseClicked"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane7">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="sector">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="toolTipText" type="java.lang.String" value="sector"/>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="sectorMouseClicked"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane9">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="sector1">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="toolTipText" type="java.lang.String" value="sector1"/>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="sector1MouseClicked"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane10">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="toolTipText" type="java.lang.String" value="jTextArea1"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane11">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea2">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="toolTipText" type="java.lang.String" value="jTextArea2"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextArea2MouseClicked"/>
+            <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="jTextArea2PropertyChange"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jta">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="toolTipText" type="java.lang.String" value="jta"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jtaMouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="10"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="worldTest">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="ff" id="green" palette="1" red="0" type="palette"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="worldTest"/>
+        <Property name="toolTipText" type="java.lang.String" value="toSecs"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="worldTestMouseClicked"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea3">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="toolTipText" type="java.lang.String" value="jTextArea3"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane6">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea4">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="lineWrap" type="boolean" value="true"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="toolTipText" type="java.lang.String" value="jTextArea4"/>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleParent" type="javax.accessibility.Accessible" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="jScrollPane6"/>
+            </Property>
+          </AccessibilityProperties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextArea4MouseClicked"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

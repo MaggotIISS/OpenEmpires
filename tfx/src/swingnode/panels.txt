@@ -1,0 +1,57 @@
+
+        ////////////////////////////////////////////////////////////////////////
+        //?=NO VISUAL
+        ////////////////////////////////////////////////////////////////////////
+        //swingNode.setContent(new JButton("Click me!"));
+        //swingNode.setContent(new panels.Panel4Word());
+        //swingNode.setContent(new panels.Panel4Boxer());
+        //swingNode.setContent(new panels);
+        //?swingNode.setContent(new panels.Panel4Calculator);
+        //panels.Panel4Calculator.main(args);
+        //swingNode.setContent(new panels.Panel4Careers());
+        //swingNode.setContent(new panels.Panel4Chars());
+        //swingNode.setContent(new panels.Panel4Conflict());
+        //?swingNode.setContent(new panels.Panel4ListTextOld("Test"));
+        //swingNode.setContent(new panels.Panel4MassCombat());
+        //swingNode.setContent(new panels.Panel4Mining());
+        //swingNode.setContent(new panels.Panel4NPC());
+        //swingNode.setContent(new panels.Panel4NumTypeGroup());
+        //swingNode.setContent(new panels.Panel4Piece("Test"));
+        //?swingNode.setContent(new panels.Panel4PieceInfo());
+        //swingNode.setContent(new panels.Panel4PlanetTable());
+        //swingNode.setContent(new panels.Panel4Properties());
+        //swingNode.setContent(new panels.Panel4Rotate());
+        //swingNode.setContent(new panels.Panel4Routes());
+        //?swingNode.setContent(new panels.Panel4ShortRoute());
+        //?swingNode.setContent(new panels.Panel4Squadron());
+        //?swingNode.setContent(new panels.Panel4Squadrons());
+        //?swingNode.setContent(new panels.Panel4StarGen());
+        //?swingNode.setContent(new panels.Panel4StarPic());
+        //swingNode.setContent(new panels.Panel4T5ArmorMaker());
+        //swingNode.setContent(new panels.Panel4T5BitSet());
+        //?swingNode.setContent(new panels.Panel4T5CounterMaker());
+        //swingNode.setContent(new panels.Panel4T5D66());
+        //swingNode.setContent(new panels.Panel4T5GunMaker());
+        //swingNode.setContent(new panels.Panel4T5Launch());
+        //swingNode.setContent(new panels.Panel4T5Neighbours());
+        //swingNode.setContent(new panels.Panel4T5QREBS());
+        //?swingNode.setContent(new panels.Panel4T5Scripting());
+        //swingNode.setContent(new panels.Panel4T5Squadron());
+        //swingNode.setContent(new panels.Panel4T5System());
+        //swingNode.setContent(new panels.Panel4T5SystemPic());
+        //?swingNode.setContent(new panels.Panel4T5Troop());
+        //swingNode.setContent(new panels.Panel4T5);
+        //swingNode.setContent(new panels.Panel4T5);
+        //swingNode.setContent(new panels.Panel4Hexer());
+        //swingNode.setContent(new panels.Panel4T5Locator());
+        //swingNode.setContent(new panels.Panel4T5WebData());
+        //swingNode.setContent(new panels.Panel4TableViewer());
+        //swingNode.setContent(new panels.Panel4TradeCargo());
+        //swingNode.setContent(new panels.Panel4TradeCargo(""));
+        //?swingNode.setContent(new panels.Panel4Troop());
+        //?swingNode.setContent(new panels.Panel4UMP());
+        //swingNode.setContent(new panels.Panel4UMPs());
+        //swingNode.setContent(new panels.Panel4Word());
+        //swingNode.setContent(new panels.Panel4WordGen());
+        //swingNode.setContent(new panels.Panel4World());
+        //swingNode.setContent(new panels._ShowCode());

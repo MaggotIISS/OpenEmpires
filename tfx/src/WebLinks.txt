@@ -1,0 +1,31 @@
+//  JAVAFX
+http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/
+http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/ui_controls_samples.htm#CJAICEAG
+http://docs.oracle.com/javase/8/index.html
+http://docs.oracle.com/javase/8/javafx/user-interface-tutorial/index.html
+https://docs.oracle.com/javase/8/javase-books.htm
+http://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TableView.html
+//  W3SCHOOLS
+http://www.w3schools.com/html/default.asp
+http://www.w3schools.com/css/default.asp
+http://www.w3schools.com/js/default.asp
+http://www.w3schools.com/sql/default.asp
+http://www.w3schools.com/php/default.asp
+http://www.w3schools.com/xml/default.asp
+//  HTML
+http://www.w3schools.com/tags/default.asp
+http://www.w3schools.com/tags/ref_eventattributes.asp
+http://www.w3schools.com/colors/default.asp
+http://www.w3schools.com/tags/ref_attributes.asp
+//  CSS
+http://www.w3schools.com/cssref/default.asp
+http://www.w3schools.com/cssref/css_selectors.asp
+http://www.w3schools.com/w3css/w3css_references.asp
+http://www.w3schools.com/bootstrap/bootstrap_ref_css_text.asp
+//  JAVASCRIPT
+http://www.w3schools.com/
+http://www.w3schools.com/jsref/default.asp
+http://www.w3schools.com/jquery/jquery_ref_selectors.asp
+http://www.w3schools.com/json/tryit.asp?filename=tryjson_http
+//  JAVA PROGRAM
+file:///c://T5/TFX/
