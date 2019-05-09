@@ -1,0 +1,3 @@
+dbviewer.globals.ImageListTransferHandler
+dbviewer.globals.ImageListDnDFrame
+dbviewer.globals.ImageList
