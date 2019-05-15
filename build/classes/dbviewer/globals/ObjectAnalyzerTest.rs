@@ -1,2 +1,0 @@
-dbviewer.globals.ObjectAnalyzerOld
-dbviewer.globals.ObjectAnalyzerTest

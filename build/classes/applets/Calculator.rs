@@ -1,5 +1,0 @@
-applets.CalculatorPanel
-applets.Calculator
-applets.CalculatorPanel$InsertAction
-applets.CalculatorFrame
-applets.CalculatorPanel$CommandAction

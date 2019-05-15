@@ -230,20 +230,22 @@
                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jcb4Rank" linkSize="33" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
-                                  <Component id="jcb4Lang" linkSize="33" alignment="0" min="-2" pref="99" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jcb4Lang" min="-2" pref="99" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="jcb4Rank" pref="101" max="32767" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                               <Component id="jButton2" min="-2" pref="36" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                               <Component id="Sex" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" attributes="0">
                               <Component id="jcb4Career" min="-2" pref="101" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="js4Terms" min="-2" pref="36" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                              <Component id="js4Terms" min="-2" pref="45" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="jtf4UPP" min="-2" pref="55" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -263,9 +265,10 @@
                   </Group>
                   <Component id="jsp4All" alignment="0" min="-2" pref="397" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jcb4Star" pref="617" max="32767" attributes="0"/>
-                  <Component id="jScrollPane1" pref="617" max="32767" attributes="0"/>
+                  <Component id="jcb4Star" pref="592" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" pref="592" max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
