@@ -758,7 +758,7 @@ public class Empire extends javax.swing.JPanel {
           .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
           .addComponent(jLabel6))
         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-        .addComponent(jScrollPane1)
+        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE)
         .addGap(0, 0, 0))
     );
 
@@ -911,8 +911,7 @@ public class Empire extends javax.swing.JPanel {
         .addGap(6, 6, 6)
         .addComponent(jButton18)
         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-        .addContainerGap())
+        .addComponent(jScrollPane3))
     );
 
     jTextArea2.setColumns(20);
@@ -935,9 +934,7 @@ public class Empire extends javax.swing.JPanel {
     );
     jPanel5Layout.setVerticalGroup(
       jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGroup(jPanel5Layout.createSequentialGroup()
-        .addComponent(jScrollPane2)
-        .addGap(0, 0, 0))
+      .addComponent(jScrollPane2)
     );
 
     javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -969,7 +966,7 @@ public class Empire extends javax.swing.JPanel {
             .addGap(0, 0, 0)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
               .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-              .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+              .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
     );
 
     layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jPanel2, jPanel4});
@@ -2382,6 +2379,7 @@ public class Empire extends javax.swing.JPanel {
       compute(num);
     }
     GlobalMethods.saveTextFile("C://T5/" + sec.getText() + "/" + sub.getText() + "/" + sys.getText() + "/", "Economics", ".txt", jTextArea2.getText());
+    jButton18.doClick();
     Develop.main(args);
   }
 
@@ -2625,11 +2623,12 @@ public class Empire extends javax.swing.JPanel {
     // if RU is positive - they invest in you
     // if RU is negative - you invest in them
     System.out.println("addInvestments");
-    String[] lines = jTextArea3.getText().split(CRLF);
+    String[] lines = jTextArea3.getText().trim().split(CRLF);
     String hex = "";
     String invest = "";
     GlobalMethods.saveTextFile("C:/T5/" + sec.getText() + FS + sub.getText() + FS + sys.getText() + FS, "Investments", ".txt", jTextArea3.getText());
     loadInvestments();
+    jTextField7.setText(""+lines.length);
   }
 
   private void loadInvestments() {

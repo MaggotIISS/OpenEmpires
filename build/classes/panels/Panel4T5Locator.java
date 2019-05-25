@@ -3870,7 +3870,8 @@ public class Panel4T5Locator extends Panel4 {
         case "Efate": {
           jcb4Sec.setSelectedItem("Spinward Marches");
           jcb4Sub.setSelectedItem("C Regina");
-          jcb4Sys.setSelectedItem("1705 Efate");
+          jcb4Sys.setSelectedIndex(0);
+//          jcb4Sys.setSelectedItem("1705 Efate");
           break;
         }
         case "Kesali": {
@@ -3883,6 +3884,7 @@ public class Panel4T5Locator extends Panel4 {
         case "Zeycude": {
           jcb4Sec.setSelectedItem("Spinward Marches");
           jcb4Sub.setSelectedItem("A Cronor");
+//          jcb4Sys.setSelectedIndex(?);
           break;
         }
         case "Regina": {

@@ -18,8 +18,11 @@
         <group/>
         <group name="NB11.0"/>
         <group name="OpenJDK">
-            <file>file:/C:/OpenEmpires/src/panels/Panel4T5Locator.java</file>
+            <file>file:/C:/OpenEmpires/src/empires/Develop.java</file>
             <file>file:/C:/OpenEmpires/src/empires/Empire.java</file>
+            <file>file:/C:/OpenEmpires/src/empires/p4Inf.java</file>
+            <file>file:/C:/OpenEmpires/src/empires/p4TL.java</file>
+            <file>file:/C:/OpenEmpires/src/empires/p4SP.java</file>
         </group>
     </open-files>
 </project-private>
