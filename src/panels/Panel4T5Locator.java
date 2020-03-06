@@ -76,6 +76,7 @@ import static panels.Panel4T5Scripting.writeXML;
 import starters.MyChart;
 //import web.bits2page.Bits2Page;
 import empires.Empire;
+import linkpictext.Panel4Add;
 //import web.version2.F4v2;
 
 /**
@@ -941,7 +942,7 @@ public class Panel4T5Locator extends Panel4 {
       }
     });
 
-    jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Regina", "Fraynj", "Kesali", "Capital", "bits2Page()", "createFamily()", "createNobles()", "createAdmiral()", "createCommodores()", "createAdmiral()", "createNPCs()", "createMOfficers()", "createBases()", "createOrbitCounters()", "updatePic()" }));
+    jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Regina", "Fraynj", "Kesali", "Capital", "createNobles()", "createAdmiral()", "createCommodores()", "createAdmiral()", "createNPCs()", "createMOfficers()", "createBases()", "createOrbitCounters()", "//updatePic()", "createFamily()", "bits2Page()" }));
     jComboBox2.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         jComboBox2ActionPerformed(evt);
@@ -1008,9 +1009,7 @@ public class Panel4T5Locator extends Panel4 {
               .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                   .addComponent(jcb4Lang, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                  .addGroup(layout.createSequentialGroup()
-                    .addComponent(jcb4Rank, 0, 101, Short.MAX_VALUE)
-                    .addGap(0, 0, 0)))
+                  .addComponent(jcb4Rank, 0, 101, Short.MAX_VALUE))
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(Sex))
@@ -1451,7 +1450,7 @@ public class Panel4T5Locator extends Panel4 {
             + "to a withdrawal of permission on 90 days notice. \n"
             + "\n"
             + "Any use of Far Future Enterprises's copyrighted material or \n"
-            + "trademarks anywhere on this web site and its files should not \n"
+            + "trademarks anywhere in this document and its files should not \n"
             + "be viewed as a challenge to those copyrights or trademarks. \n";
     JTextArea jta = new JTextArea(txt, 50, 50);
     jta.setEditable(false);
@@ -1549,6 +1548,11 @@ public class Panel4T5Locator extends Panel4 {
         updatePic(me);
         break;
       }
+//      case "createSections()": {
+//       web.bits2page.Bits2Page.createSection("Cover","Test");
+//       web.bits2page.Bits2Page.createSection("Key","Test");
+//       break;
+//      }
       default: {
         //<editor-fold defaultstate="collapsed" desc="JOP">
         {
@@ -1567,11 +1571,13 @@ public class Panel4T5Locator extends Panel4 {
 
   private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
     int num = jComboBox2.getItemCount();
-    for (int j = 0; j < num; j++) {
+    for (int j = 0; j < (num); j++) {
       String it = jComboBox2.getItemAt(j);
+      System.out.println("it = " + it);
       if (!it.startsWith("//")) {
         if (it.contains("()")) {
           jComboBox2.setSelectedIndex(j);
+          System.out.println("" + jComboBox2.getItemAt(j));
         }
       }
     }
@@ -3429,7 +3435,7 @@ public class Panel4T5Locator extends Panel4 {
 
   public static String getWord(MouseEvent em, String string) {
     String word = "word";
-    if(string.equals("")) {
+    if (string.equals("")) {
       string = "Vilani";
     }
     jcb4Lang.setSelectedItem(string);
@@ -7327,7 +7333,7 @@ public class Panel4T5Locator extends Panel4 {
   private void saveAll() {
     //<editor-fold defaultstate="collapsed" desc="IF DEBUG">
     String txt = "";
-    boolean DEBUG = false;
+    boolean DEBUG = true;
     {
       //DEBUG = false;
       if (DEBUG) { // true or false
@@ -8987,10 +8993,14 @@ public class Panel4T5Locator extends Panel4 {
   }
 
   private void jtf2cb(JTextField jtf) {
-    String txt = jtf.getText().trim();
-    StringSelection sel = new StringSelection(txt + CRLF);
-    cb.setContents(sel, null);
-    System.out.println(sel);
+    try {
+      String txt = jtf.getText().trim();
+      StringSelection sel = new StringSelection(txt + CRLF);
+      cb.setContents(sel, null);
+      System.out.println(sel);
+    } catch (Exception e) {
+      System.out.println("e = " + e);
+    }
   }
 
   private void jl2cb(JLabel jl) {
@@ -9145,6 +9155,7 @@ public class Panel4T5Locator extends Panel4 {
     Panel4T5CounterMaker.Folder.setSelectedItem("World");
     Panel4T5Troop.systemChange();
     Panel4T5Squadron.systemChange();
+//    jcb4All.setSelectedIndex(0);
     ta4Read.grabFocus();
   }
 
@@ -10449,6 +10460,7 @@ public class Panel4T5Locator extends Panel4 {
                         .toString().trim() + "?");
         if (reply == JOptionPane.YES_OPTION) {
           saveAll();
+          saveJtas();
         }
       } else {
         f.mkdir();
@@ -11099,7 +11111,7 @@ public class Panel4T5Locator extends Panel4 {
       jcb4All.setSelectedIndex(j);
       name = jcb4All.getSelectedItem().toString().trim();
       txt = jta4All.getText();
-//      Panel4Add.saveTextFile(folder, name, ext, txt);
+      Panel4Add.saveTextFile(folder, name, ext, txt);
     }
     jcb4All.setSelectedIndex(index);
   }
@@ -11189,4 +11201,14 @@ public class Panel4T5Locator extends Panel4 {
     g.drawLine(0, 600, 0, 0);
   }
 
+//    private void createSection(String string,String string2) {
+//        switch(string) {
+//            case "Cover": {
+//                break;
+//            }
+//            default: {
+//                break;
+//            }
+//        }
+//    }
 }

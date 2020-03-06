@@ -23,6 +23,7 @@ public class Start {
 
         args = new String[]{"open.P4Start"};
         P4Start.main(args);
+        P4Start.jButton1.doClick();
     }
 
 }

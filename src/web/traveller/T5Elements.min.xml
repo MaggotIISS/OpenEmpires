@@ -1,0 +1,34 @@
+
+﻿<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE tas SYSTEM "T5Elements.dtd"><tas><system>SYSTEM
+    
+    <hex>Hex</hex><name>Name</name><uwp>UWP</uwp><remarks>Remarks</remarks><ix>Ix</ix><ex>Ex</ex><cx>Cx</cx><n>N</n><b>B</b><z>Z</z><pbg>PBG</pbg><w>W</w><a>A</a><stellar>Stellar</stellar></system><subsector>Subsector
+    
+    <letter>Letter</letter><name>Name</name><worlds>Worlds</worlds></subsector><sector>Sector
+    
+    <x>X</x><y>Y</y><name>Name</name><domain>Domain</domain></sector><size>SIZE
+    <unit>Unit</unit><x>X</x><y>Y</y><z>Z</z><unit>Unit</unit></size><mass>MASS
+    
+    <unit>Unit</unit><weight>Weight</weight></mass><stardate>STARDATE
+    
+    <unit>Unit</unit><year>Year</year><day>Day</day><hour>Hour</hour><minute>Minute</minute><second>Second</second><mil>Mil</mil></stardate><orbit>ORBIT
+    
+    <unit>Unit</unit><num>Num</num><type>Type</type></orbit><star>STAR
+    
+    <unit>Unit</unit><col>Col</col><size>Size</size><type>Type</type><companion>Companion</companion></star><gasgiant>GAS GIANT
+    
+    <unit>Unit</unit><size>Size</size><wsize>WSize</wsize><dia>Dia</dia></gasgiant><planet>PLANET
+    
+    <name>Name</name><uwp>UWP</uwp><orbitdata>OrbitData</orbitdata></planet><moon>MOON
+    
+    <name>Name</name><uwp>UWP</uwp><orbit>Orbit</orbit></moon><name>NAME
+    
+    <first>First</first><middle>Middle</middle><last>Last</last><id>ID</id></name><upp>UPP
+    
+    <str>STR</str><dex>DEX</dex><end>END</end><int>INT</int><edu>EDU</edu><soc>SOC</soc></upp><info>INFO
+    
+    <career>Career</career><terms>Terms</terms></info><npc>NPC
+    
+    <name>Name</name><upp>UPP</upp><info>Info</info></npc><id>ID
+    <sec>Sector</sec><sub>Subsector</sub><sys>System</sys><orbit>Orbit</orbit><country>Country</country><commdot>Commdot</commdot><email>Email</email><phone>Phone</phone><name>Name</name></id><crew>Crew
+    <id>ID</id><rank>Rank</rank><position>Position</position></crew><table>Table
+    <x>X</x><y>Y</y><title>Title</title><type>Type</type></table><W7><Who></Who><What></What><Why></Why><Where></Where><When></When><With></With><Which></Which></W7></tas>

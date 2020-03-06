@@ -1,0 +1,153 @@
+https://www.w3schools.com/charsets/default.asp
+
+
+https://www.w3schools.com/charsets/ref_utf_punctuation.asp
+UTF-8 General Punctuation
+Range: Decimal 8192-8303. Hex 2000-206F.
+
+https://www.w3schools.com/charsets/ref_utf_currency.asp
+UTF-8 Currency Symbols
+Range: Decimal 8352-8399. Hex 20A0-20CF.
+
+https://www.w3schools.com/charsets/ref_utf_letterlike.asp
+UTF-8 Letterlike Symbols
+Range: Decimal 8448-8527. Hex 2100-214F.
+
+https://www.w3schools.com/charsets/ref_utf_arrows.asp
+UTF-8 Arrows
+Range: Decimal 8592-8703. Hex 2190-21FF.
+
+https://www.w3schools.com/charsets/ref_utf_math.asp
+UTF-8 Mathematical Operators
+Range: Decimal 8704-8959. Hex 2200-22FF.
+
+https://www.w3schools.com/charsets/ref_utf_box.asp
+UTF-8 Box Drawings
+Range: Decimal 9472-9599. Hex 2500-257F.
+
+https://www.w3schools.com/charsets/ref_utf_block.asp
+UTF-8 Block Elements
+Range: Decimal 9600-9631. Hex 2580-259F.
+
+https://www.w3schools.com/charsets/ref_utf_geometric.asp
+UTF-8 Geometric Shapes
+Range: Decimal 9632-9727. Hex 25A0-25FF.
+
+https://www.w3schools.com/charsets/ref_utf_symbols.asp
+UTF-8 Miscellaneous Symbols
+Range: Decimal 9728-9983. Hex 2600-26FF.
+
+https://www.w3schools.com/charsets/ref_utf_dingbats.asp
+UTF-8 Dingbats
+Range: Decimal 9984-10175. Hex 2700-27BF.
+
+
+https://www.w3schools.com/charsets/ref_emoji.asp
+https://www.w3schools.com/charsets/ref_emoji_smileys.asp
+https://www.w3schools.com/charsets/ref_emoji_skin_tones.asp
+
+https://www.w3schools.com/icons/icons_reference.asp
+
+Font-Awesome
+https://www.w3schools.com/icons/fontawesome5_icons_accessibility.asp
+https://www.w3schools.com/icons/fontawesome5_icons_animals.asp
+https://www.w3schools.com/icons/fontawesome5_icons_arrows.asp
+https://www.w3schools.com/icons/fontawesome5_icons_audio_video.asp
+https://www.w3schools.com/icons/fontawesome5_icons_automotive.asp
+https://www.w3schools.com/icons/fontawesome5_icons_autumn.asp
+https://www.w3schools.com/icons/fontawesome5_icons_brands.asp
+https://www.w3schools.com/icons/fontawesome5_icons_buildings.asp
+https://www.w3schools.com/icons/fontawesome5_icons_business.asp
+https://www.w3schools.com/icons/fontawesome5_icons_charity.asp
+https://www.w3schools.com/icons/fontawesome5_icons_chat.asp
+https://www.w3schools.com/icons/fontawesome5_icons_chess.asp
+https://www.w3schools.com/icons/fontawesome5_icons_code.asp
+https://www.w3schools.com/icons/fontawesome5_icons_communication.asp
+https://www.w3schools.com/icons/fontawesome5_icons_computers.asp
+https://www.w3schools.com/icons/fontawesome5_icons_currency.asp
+https://www.w3schools.com/icons/fontawesome5_icons_datetime.asp
+https://www.w3schools.com/icons/fontawesome5_icons_design.asp
+https://www.w3schools.com/icons/fontawesome5_icons_editors.asp
+https://www.w3schools.com/icons/fontawesome5_icons_education.asp
+https://www.w3schools.com/icons/fontawesome5_icons_emoji.asp
+https://www.w3schools.com/icons/fontawesome5_icons_files.asp
+https://www.w3schools.com/icons/fontawesome5_icons_food.asp
+https://www.w3schools.com/icons/fontawesome5_icons_genders.asp
+https://www.w3schools.com/icons/fontawesome5_icons_halloween.asp
+https://www.w3schools.com/icons/fontawesome5_icons_hands.asp
+https://www.w3schools.com/icons/fontawesome5_icons_health.asp
+https://www.w3schools.com/icons/fontawesome5_icons_holiday.asp
+https://www.w3schools.com/icons/fontawesome5_icons_images.asp
+https://www.w3schools.com/icons/fontawesome5_icons_interfaces.asp
+https://www.w3schools.com/icons/fontawesome5_icons_logistics.asp
+https://www.w3schools.com/icons/fontawesome5_icons_maps.asp
+https://www.w3schools.com/icons/fontawesome5_icons_marketing.asp
+https://www.w3schools.com/icons/fontawesome5_icons_mathematics.asp
+https://www.w3schools.com/icons/fontawesome5_icons_medical.asp
+https://www.w3schools.com/icons/fontawesome5_icons_moving.asp
+https://www.w3schools.com/icons/fontawesome5_icons_objects.asp
+https://www.w3schools.com/icons/fontawesome5_icons_payment_shopping.asp
+https://www.w3schools.com/icons/fontawesome5_icons_political.asp
+https://www.w3schools.com/icons/fontawesome5_icons_religion.asp
+https://www.w3schools.com/icons/fontawesome5_icons_shapes.asp
+https://www.w3schools.com/icons/fontawesome5_icons_spinners.asp
+https://www.w3schools.com/icons/fontawesome5_icons_sports.asp
+https://www.w3schools.com/icons/fontawesome5_icons_status.asp
+https://www.w3schools.com/icons/fontawesome5_icons_tabletop_gaming.asp
+https://www.w3schools.com/icons/fontawesome5_icons_tabletop_gaming.asp
+https://www.w3schools.com/icons/fontawesome5_icons_travel.asp
+https://www.w3schools.com/icons/fontawesome5_icons_users_people.asp
+https://www.w3schools.com/icons/fontawesome5_icons_vehicles.asp
+https://www.w3schools.com/icons/fontawesome5_icons_weather.asp
+https://www.w3schools.com/icons/fontawesome5_icons_winter.asp
+https://www.w3schools.com/icons/fontawesome5_icons_writing.asp
+
+Google
+https://www.w3schools.com/icons/google_icons_action.asp
+https://www.w3schools.com/icons/google_icons_alert.asp
+https://www.w3schools.com/icons/google_icons_av.asp
+https://www.w3schools.com/icons/google_icons_communication.asp
+https://www.w3schools.com/icons/google_icons_content.asp
+https://www.w3schools.com/icons/google_icons_device.asp
+https://www.w3schools.com/icons/google_icons_editor.asp
+https://www.w3schools.com/icons/google_icons_file.asp
+https://www.w3schools.com/icons/google_icons_hardware.asp
+https://www.w3schools.com/icons/google_icons_image.asp
+https://www.w3schools.com/icons/google_icons_maps.asp
+https://www.w3schools.com/icons/google_icons_navigation.asp
+https://www.w3schools.com/icons/google_icons_notification.asp
+https://www.w3schools.com/icons/google_icons_places.asp
+https://www.w3schools.com/icons/google_icons_social.asp
+https://www.w3schools.com/icons/google_icons_toggle.asp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

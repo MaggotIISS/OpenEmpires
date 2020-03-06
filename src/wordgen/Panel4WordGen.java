@@ -507,7 +507,7 @@ public class Panel4WordGen extends javax.swing.JPanel {
       + "The contents of this site are for personal, non-commercial use only. \n"
       + "\n"
       + "Any use of Far Future Enterprises's copyrighted material or \n"
-      + "trademarks anywhere on this web site and its files should not \n"
+      + "trademarks anywhere in this document and its files should not \n"
       + "be viewed as a challenge to those copyrights or trademarks. \n"
       + "In addition, any program/articles/file on this site cannot be \n"
       + "republished or distributed without the consent of \n"
