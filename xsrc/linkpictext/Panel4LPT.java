@@ -426,7 +426,7 @@ public class Panel4LPT extends Panel4 {
           } catch (IOException ex) {
             try {
               pic.setIcon(new ImageIcon(ImageIO.read(
-                new File("C://T5/_T5 Image Library/icon.png"))));
+                new File("C://T5/_PNG/Ships/scout.png"))));
             } catch (IOException ex1) {
               Logger.getLogger(Panel4LPT.class.getName()).log(Level.SEVERE, null, ex1);
             }

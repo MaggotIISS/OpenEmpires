@@ -232,10 +232,7 @@
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jcb4Lang" min="-2" pref="99" max="-2" attributes="0"/>
-                                  <Group type="102" attributes="0">
-                                      <Component id="jcb4Rank" pref="101" max="32767" attributes="0"/>
-                                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="jcb4Rank" pref="101" max="32767" attributes="0"/>
                               </Group>
                               <Component id="jButton2" min="-2" pref="36" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
@@ -1587,17 +1584,17 @@
             <StringItem index="1" value="Fraynj"/>
             <StringItem index="2" value="Kesali"/>
             <StringItem index="3" value="Capital"/>
-            <StringItem index="4" value="bits2Page()"/>
-            <StringItem index="5" value="createFamily()"/>
-            <StringItem index="6" value="createNobles()"/>
+            <StringItem index="4" value="createNobles()"/>
+            <StringItem index="5" value="createAdmiral()"/>
+            <StringItem index="6" value="createCommodores()"/>
             <StringItem index="7" value="createAdmiral()"/>
-            <StringItem index="8" value="createCommodores()"/>
-            <StringItem index="9" value="createAdmiral()"/>
-            <StringItem index="10" value="createNPCs()"/>
-            <StringItem index="11" value="createMOfficers()"/>
-            <StringItem index="12" value="createBases()"/>
-            <StringItem index="13" value="createOrbitCounters()"/>
-            <StringItem index="14" value="updatePic()"/>
+            <StringItem index="8" value="createNPCs()"/>
+            <StringItem index="9" value="createMOfficers()"/>
+            <StringItem index="10" value="createBases()"/>
+            <StringItem index="11" value="createOrbitCounters()"/>
+            <StringItem index="12" value="//updatePic()"/>
+            <StringItem index="13" value="createFamily()"/>
+            <StringItem index="14" value="bits2Page()"/>
           </StringArray>
         </Property>
       </Properties>
