@@ -1,0 +1,27 @@
+            h = subh;
+            w = h * 11 / 8;
+            l3 = w * 3 / 11;
+            l4 = w * 4 / 11;
+            l5 = w * 5 / 11;
+            xo = (left * (w * 8 / 11));
+            yo = mod + (top * subh);
+            Point a = new Point(l3, 0);
+            Point b = new Point(l3 + l5, 0);
+            Point c = new Point(l5 + (l3 * 2), l4);
+            Point d = new Point(l3 + l5, (l4 * 2));
+            Point e = new Point(l3, (l4 * 2));
+            Point f = new Point(0, l4);
+            Point[] points = new Point[]{a, b, c, d, e, f};
+            Polygon p = new Polygon();
+            g.setColor(Color.white);
+            if (j == jcb4Sys.getSelectedIndex()) {
+              g.setColor(getTASColor());
+            }
+            for (Point point : points) {
+              x = (int) (point.getX()) + xo;
+              y = (int) (point.getY()) + yo;
+              p.addPoint(x, y);
+            }
+            g.fillPolygon(p);
+            g.setColor(Color.black);
+            g.drawPolygon(p);
